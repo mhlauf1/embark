@@ -40,7 +40,7 @@ const LocationItem = ({ title, location, tags }: LocationItemProps) => (
     <p>{location}</p>
     <div className="flex flex-row items-center gap-2">
       {tags.map((tag) => (
-        <span>{tag}</span>
+        <span key={tag}>{tag}</span>
       ))}
     </div>
   </div>
