@@ -10,18 +10,21 @@ const About = () => {
     <section className="py-36 px-8 items-center justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-start flex-1">
         <BadgeHero title="Premier Pet Care" />
-        <p className="text-xl mt-4 w-[40ch]">
+        <p className="text-2xl mt-4 w-[40ch]">
           A network of trusted, local pet care providers delivering
           comprehensive services with a focus on quality, reliability, and
           safety
         </p>
-        <div className="grid grid-cols-2 w-fit gap-4 my-8">
+        <div className="grid grid-cols-1 w-fit gap-6 mt-6 mb-10">
           <BulletItem text="Professional expertise" />
           <BulletItem text="Local trusted teams" />
           <BulletItem text="Specialized facilities" />
           <BulletItem text="Comprehensive Service Offerings" />
         </div>
-        <Button className="font-semibold bg-[#183453] text-white" size="lg">
+        <Button
+          className="font-medium text-xl tracking-wide rounded-full py-8 px-10 bg-[#183453] text-white"
+          size="lg"
+        >
           About Us
         </Button>
       </div>

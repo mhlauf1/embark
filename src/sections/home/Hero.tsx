@@ -6,16 +6,22 @@ const Hero = () => {
   return (
     <section className="h-[90vh] bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF]  py-12">
       <div className="items-center justify-between flex md:flex-row px-8 flex-col max-w-screen-2xl mx-auto">
-        <div className="flex flex-1 flex-col gap-4">
+        <div className="flex flex-1 flex-col gap-6">
           <h1 className="hero-title capitalize w-[12ch]">
             Caring for your <span className="text-[#9CD8F6]"> pets</span> like
             family
           </h1>
-          <div className="space-x-2 mt-4">
-            <Button className="font-semibold bg-[#9CD8F6]" size="lg">
+          <div className="space-x-2 mt-6">
+            <Button
+              className="font-medium text-xl border border-[#183453]/50 tracking-wide rounded-full py-8 px-10 bg-[#9CD8F6]"
+              size="lg"
+            >
               Our Services
             </Button>
-            <Button className="font-semibold bg-[#183453] text-white" size="lg">
+            <Button
+              className="font-medium text-xl border border-[#183453]/50 tracking-wide rounded-full py-8 px-10 bg-[#183453] text-white"
+              size="lg"
+            >
               Our Locations
             </Button>
           </div>
@@ -25,24 +31,24 @@ const Hero = () => {
         </div>
 
         <div className="flex-1">
-          <div className="flex justify-end gap-4">
+          <div className="flex justify-end">
             <div className="space-y-4">
               <div className="h-auto  overflow-hidden">
                 <Image
                   src="/hero-dog-1.png"
                   alt="Goldendoodle with bandana"
-                  width={425}
-                  height={425}
-                  className="rounded-xl border-2 border-[#183453] w-full  object-cover"
+                  width={400}
+                  height={400}
+                  className="rounded-xl border-2 border-[#183453] w-[90%]  object-cover"
                 />
               </div>
               <div className="h-auto  overflow-hidden">
                 <Image
                   src="/hero-dog-2.png"
                   alt="Corgi with bandana"
-                  width={370}
-                  height={370}
-                  className="rounded-xl border-2 border-[#183453] w-full h-auto object-cover"
+                  width={350}
+                  height={350}
+                  className="rounded-xl border-2 border-[#183453] w-[90%] h-auto object-cover"
                 />
               </div>
             </div>
@@ -51,18 +57,18 @@ const Hero = () => {
                 <Image
                   src="/hero-dog-3.png"
                   alt="Grey poodle"
-                  width={330}
-                  height={330}
-                  className="rounded-xl border-2 border-[#183453] w-full  object-cover"
+                  width={300}
+                  height={300}
+                  className="rounded-xl border-2 border-[#183453] w-[90%]  object-cover"
                 />
               </div>
               <div className="h-auto overflow-hidden">
                 <Image
                   src="/hero-dog-4.png"
                   alt="Wet shepherd mix"
-                  width={453}
-                  height={453}
-                  className="rounded-xl border-2 border-[#183453] w-full  object-cover"
+                  width={420}
+                  height={420}
+                  className="rounded-xl border-2 border-[#183453] w-[90%]  object-cover"
                 />
               </div>
             </div>

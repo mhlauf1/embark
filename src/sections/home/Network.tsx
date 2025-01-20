@@ -35,21 +35,26 @@ interface LocationItemProps {
 }
 
 const LocationItem = ({ title, location, tags }: LocationItemProps) => (
-  <div className="bg-white rounded-2xl border border-[#183453] flex flex-col">
-    <h3>{title}</h3>
-    <p>{location}</p>
-    <div className="flex flex-row items-center gap-2">
+  <div className="bg-white p-6 rounded-2xl border border-[#183453] flex flex-col">
+    <h3 className="text-3xl tracking-tight font-bold">{title}</h3>
+    <p className="opacity-70 text-xl mt-1.5 mb-3">{location}</p>
+    <div className="flex mt-2 flex-row items-center gap-2">
       {tags.map((tag) => (
-        <span key={tag}>{tag}</span>
+        <span
+          className="px-4 border border-[#183453]/50 py-2 rounded-full bg-[#D5F0FF]"
+          key={tag}
+        >
+          {tag}
+        </span>
       ))}
     </div>
   </div>
 );
 const Network = () => {
   return (
-    <section className="py-36 px-8 bg-[#9CD8F6]">
-      <div className="max-w-screen-2xl mx-auto  flex flex-col">
-        <div className="flex flex-col gap-2 items-start">
+    <section className="py-36  bg-[#9CD8F6]">
+      <div className="max-w-screen-2xl mx-auto px-8 flex flex-col">
+        <div className="flex flex-col gap-4 items-start">
           <div className="border border-[#183453]/50 bg-white rounded-full py-1 flex flex-row items-center gap-2 px-3">
             <Image
               src="/badge-paws.png"
@@ -63,7 +68,7 @@ const Network = () => {
             Quality Care Built On Trust and Expertis
           </h2>
         </div>
-        <div className="flex mt-16 flex-col md:flex-row">
+        <div className="flex mt-16 gap-8 flex-col md:flex-row">
           <div className="flex flex-1 flex-col gap-2">
             {locations.map((location) => (
               <div key={location.id}>
@@ -75,7 +80,7 @@ const Network = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-1">map</div>
+          <div className="flex flex-1 bg-white border border-[#183453] rounded-2xl"></div>
         </div>
       </div>
     </section>

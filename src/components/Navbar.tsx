@@ -12,9 +12,12 @@ import Image from "next/image";
 
 const Nav = () => {
   return (
-    <Navbar className="px-20 py-2" maxWidth="full">
+    <Navbar
+      className="px-[5%] py-2 bg-white border-b shadow-sm"
+      maxWidth="full"
+    >
       <NavbarBrand>
-        <Image src="/nav-logo.png" alt="logo" height={67} width={185} />
+        <Image src="/nav-logo.png" alt="logo" height={67} width={180} />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-6 ml-2" justify="center">
         <NavbarItem>
@@ -40,7 +43,10 @@ const Nav = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} href="#" variant="ghost">
+          <Button
+            className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px6 bg-white text-[#183453]"
+            size="lg"
+          >
             Contact
           </Button>
         </NavbarItem>
