@@ -35,10 +35,10 @@ interface LocationItemProps {
 }
 
 const LocationItem = ({ title, location, tags }: LocationItemProps) => (
-  <div className="bg-white p-6 rounded-2xl border border-[#183453] flex flex-col">
+  <div className="bg-white p-8 rounded-2xl border border-[#183453] flex flex-col">
     <h3 className="text-3xl tracking-tight font-bold">{title}</h3>
     <p className="opacity-70 text-xl mt-1.5 mb-3">{location}</p>
-    <div className="flex mt-2 flex-row items-center gap-2">
+    <div className="flex mt-2 flex-wrap flex-row items-start md:items-center gap-2">
       {tags.map((tag) => (
         <span
           className="px-4 border border-[#183453]/50 py-2 rounded-full bg-[#D5F0FF]"
@@ -52,7 +52,7 @@ const LocationItem = ({ title, location, tags }: LocationItemProps) => (
 );
 const Network = () => {
   return (
-    <section className="py-36  bg-[#9CD8F6]">
+    <section className="py-24 md:py-36  bg-[#9CD8F6]">
       <div className="max-w-screen-2xl mx-auto px-8 flex flex-col">
         <div className="flex flex-col gap-4 items-start">
           <div className="border border-[#183453]/50 bg-white rounded-full py-1 flex flex-row items-center gap-2 px-3">
@@ -68,7 +68,7 @@ const Network = () => {
             Quality Care Built On Trust and Expertis
           </h2>
         </div>
-        <div className="flex mt-16 gap-8 flex-col md:flex-row">
+        <div className="flex mt-12 gap-8 flex-col md:flex-row">
           <div className="flex flex-1 flex-col gap-2">
             {locations.map((location) => (
               <div key={location.id}>

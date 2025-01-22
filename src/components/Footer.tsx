@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@heroui/react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,71 +12,80 @@ const Footer = () => {
         alt="Large Bone"
         height={90}
         width={90}
-        className="absolute top-[-40] rotate-45 left-[47%]"
+        className="absolute top-[-40] rotate-45 left-[40%] md:left-[47%]"
       />
       <div className="bg-[#183453] h-[300px] w-full"></div>
       <div className=" px-8 max-w-screen-2xl  w-full mx-auto">
         <div className="flex flex-col flex-grow items-center justify-center">
-          <div className="flex mt-[-15vh] w-full flex-row gap-4">
-            <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-16 px-12 flex-col gap-4">
-              <Image
-                src="/small-white-paw.png"
-                alt="Dog Paw"
-                height={82}
-                width={82}
-              />
-              <h3 className="text-5xl font-semibold tracking-tight">
+          <div className="flex mt-[-15vh] w-full flex-col md:flex-row gap-4">
+            <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-10 md:py-16 px-8 md:px-12 flex-col gap-4">
+              <div className="w-[64px] md:w-[82px] relative h-[64px] md:h-[82px]">
+                <Image src="/small-white-paw.png" alt="Dog Paw" fill />
+              </div>
+
+              <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">
                 Parter with us
               </h3>
-              <p className="mb-6 font-medium text-2xl">
+              <p className="mb-6 font-medium text-lg md:text-2xl">
                 Join our network of pet care excellence
               </p>
-              <Button
-                className="font-medium text-xl border border-[#183453]/50 tracking-wide rounded-full py-8 px-10 bg-[#183453] text-white"
-                size="lg"
-              >
-                Learn more
+              <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+                Learn More
               </Button>
             </div>
-            <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-16 px-12 flex-col gap-4">
-              <Image
-                src="/small-white-paw.png"
-                alt="Dog Paw"
-                height={82}
-                width={82}
-              />
-              <h3 className="text-5xl font-semibold tracking-tight">
+            <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-10 md:py-16 px-8 md:px-12 flex-col gap-4">
+              <div className="w-[64px] md:w-[82px] relative h-[64px] md:h-[82px]">
+                <Image src="/small-white-paw.png" alt="Dog Paw" fill />
+              </div>
+
+              <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">
                 Find Care Near You
               </h3>
-              <p className="mb-6 font-medium text-2xl">
+              <p className="mb-6 font-medium text-lg md:text-2xl">
                 Discover quality pet care in your community
               </p>
-              <Button
-                className="font-medium text-xl border border-[#183453]/50 tracking-wide rounded-full py-8 px-10 bg-[#183453] text-white"
-                size="lg"
-              >
-                View Locations
-              </Button>
+              <Link href="/">
+                <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+                  View Locations
+                </Button>
+              </Link>
             </div>
             <div></div>
           </div>
         </div>
         <div className="flex flex-col text-[#183453]/60 text-sm mt-16 gap-8 items-center">
           <ul className="flex gap-8">
-            <li>About</li>
-            <li>Services</li>
-            <li>Network</li>
-            <li>Partner With Us</li>
+            <Link href="/about">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/network">Network</Link>
+            <Link href="/partner-with-us">Partner With Us</Link>
           </ul>
           <ul className="flex gap-8">
-            <li>Rio Grooming & Salon</li>
-            <li>Barks & Rec Hastings</li>
-            <li>Wags Stay N&apos; Play</li>
-            <li>Boxers Bed & Biscuits</li>
+            <Link href="https://riogrooming.com/" target="_blank">
+              Rio Grooming & Salon
+            </Link>
+            <Link href="https://www.barksnrec.co/" target="_blank">
+              Barks & Rec Hastings
+            </Link>
+            <Link href="https://www.wagsstaynplay.com/" target="_blank">
+              Wags Stay N&apos; Play
+            </Link>
+            <Link href="https://www.boxersbedandbiscuits.com/" target="_blank">
+              Boxers Bed & Biscuits
+            </Link>
           </ul>
           <div className="flex items-center flex-col">
-            <p>© Embark Pet Services, LLC 2024. All rights reserved.</p>
-            <p>Designed and developed by Lauf.</p>
+            <p>© Embark Pet Services, LLC 2025. All rights reserved.</p>
+            <p>
+              Designed and developed by{" "}
+              <Link
+                href="https://www.lauf.co/"
+                target="_blank"
+                className="font-bold"
+              >
+                Lauf.
+              </Link>{" "}
+            </p>
           </div>
         </div>
         <div className="absolute bottom-0 right-0">

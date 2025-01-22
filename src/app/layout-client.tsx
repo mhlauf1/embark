@@ -1,5 +1,4 @@
 "use client";
-
 import * as React from "react";
 import { HeroUIProvider } from "@heroui/react";
 import { Outfit } from "next/font/google";

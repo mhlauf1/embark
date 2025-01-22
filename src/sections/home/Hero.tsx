@@ -4,42 +4,49 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="h-[90vh] bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF]  py-12">
-      <div className="items-center justify-between flex md:flex-row px-8 flex-col max-w-screen-2xl mx-auto">
-        <div className="flex flex-1 flex-col gap-6">
-          <h1 className="hero-title capitalize w-[12ch]">
-            Caring for your <span className="text-[#9CD8F6]"> pets</span> like
-            family
+    <section className="relative bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF] py-16 md:py-12">
+      <div className="absolute top-[25px] left-[2%] md:left-[5%]">
+        <Image
+          src="/bg-paw.png"
+          height={800}
+          width={900}
+          alt="Background Paw"
+          className="opacity-70 -rotate-12"
+        />
+      </div>
+      <div className="items-center justify-between h-full flex md:flex-row px-[5%] md:px-8 flex-col md:max-w-screen-2xl mx-auto">
+        <div className="flex flex-1 px-4 flex-col gap-6">
+          <h1 className="hero-title text-center md:text-start capitalize ">
+            Caring for your{" "}
+            <span className="text-[#9CD8F6]">
+              {" "}
+              <br /> pets
+            </span>{" "}
+            like family
           </h1>
-          <div className="space-x-2 mt-6">
-            <Button
-              className="font-medium text-xl border border-[#183453]/50 tracking-wide rounded-full py-8 px-10 bg-[#9CD8F6]"
-              size="lg"
-            >
+          <div className="space-x-2 flex flex-row justify-center md:justify-start mt-3 md:mt-6">
+            <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#9CD8F6]">
               Our Services
             </Button>
-            <Button
-              className="font-medium text-xl border border-[#183453]/50 tracking-wide rounded-full py-8 px-10 bg-[#183453] text-white"
-              size="lg"
-            >
+            <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
               Our Locations
             </Button>
           </div>
-          <p className="pt-4 hero-text font-semibold">
+          <p className="pt-2 md:pt-4 px-4 md:px-0 text-center md:text-start hero-text font-semibold">
             We unite local pet care brands under one standard of excellence
           </p>
         </div>
 
-        <div className="flex-1">
-          <div className="flex justify-end">
-            <div className="space-y-4">
+        <div className="flex-1 mt-16 md:mt-0">
+          <div className="flex justify-end gap-4">
+            <div className="space-y-4 gap-2">
               <div className="h-auto  overflow-hidden">
                 <Image
                   src="/hero-dog-1.png"
                   alt="Goldendoodle with bandana"
                   width={400}
                   height={400}
-                  className="rounded-xl border-2 border-[#183453] w-[90%]  object-cover"
+                  className="rounded-xl border-2 border-[#183453] w-[300px]  object-cover"
                 />
               </div>
               <div className="h-auto  overflow-hidden">
@@ -48,7 +55,7 @@ const Hero = () => {
                   alt="Corgi with bandana"
                   width={350}
                   height={350}
-                  className="rounded-xl border-2 border-[#183453] w-[90%] h-auto object-cover"
+                  className="rounded-xl border-2 border-[#183453] w-[300px] h-auto object-cover"
                 />
               </div>
             </div>
@@ -59,7 +66,7 @@ const Hero = () => {
                   alt="Grey poodle"
                   width={300}
                   height={300}
-                  className="rounded-xl border-2 border-[#183453] w-[90%]  object-cover"
+                  className="rounded-xl border-2 border-[#183453] w-[250px]  object-cover"
                 />
               </div>
               <div className="h-auto overflow-hidden">
@@ -68,26 +75,12 @@ const Hero = () => {
                   alt="Wet shepherd mix"
                   width={420}
                   height={420}
-                  className="rounded-xl border-2 border-[#183453] w-[90%]  object-cover"
+                  className="rounded-xl border-2 border-[#183453] w-[250px]  object-cover"
                 />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-[40px]"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            className="fill-white"
-          ></path>
-        </svg>
       </div>
     </section>
   );

@@ -13,30 +13,32 @@ import Image from "next/image";
 const Nav = () => {
   return (
     <Navbar
-      className="px-[5%] py-2 bg-white border-b shadow-sm"
+      className="px-[5%] z-10 py-2 bg-white border-b shadow-sm"
       maxWidth="full"
     >
       <NavbarBrand>
-        <Image src="/nav-logo.png" alt="logo" height={67} width={180} />
+        <Link href="/">
+          <Image src="/nav-logo.png" alt="logo" height={60} width={150} />
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-6 ml-2" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/about">
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/services">
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/network">
             Network
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/partner-with-us">
             Partner With Us
           </Link>
         </NavbarItem>

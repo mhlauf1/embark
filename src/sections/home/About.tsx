@@ -1,34 +1,46 @@
 "use client";
 import React from "react";
-import BadgeHero from "@/components/BadgeHero";
+import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import { BulletItem } from "@/components/BulletItem";
 
 const About = () => {
   return (
-    <section className="py-36 px-8 items-center justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
+    <section className="py-24 md:py-40 px-8 items-start justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-start flex-1">
-        <BadgeHero title="Premier Pet Care" />
-        <p className="text-2xl mt-4 w-[40ch]">
+        <div className="flex flex-col gap-4 items-start">
+          <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">
+            <Image
+              src="/badge-paws.png"
+              height={18}
+              width={24}
+              alt="Paw Prints"
+            />
+            <p className="font-semibold capitalize">
+              Local care your <span className="underline"> can</span> trust
+            </p>
+          </div>
+          <h2>Premier Pet Care</h2>
+        </div>
+        <p className="text-lg md:text-xl mt-4 md:mt-6 w-[95%] md:w-[90%]">
           A network of trusted, local pet care providers delivering
           comprehensive services with a focus on quality, reliability, and
           safety
         </p>
-        <div className="grid grid-cols-1 w-fit gap-6 mt-6 mb-10">
-          <BulletItem text="Professional expertise" />
-          <BulletItem text="Local trusted teams" />
-          <BulletItem text="Specialized facilities" />
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-y-4 mt-6 md:mt-8 mb-10 md:mb-16">
+          <BulletItem text="Professional Expertise" />
+          <BulletItem text="Local Trusted Teams" />
           <BulletItem text="Comprehensive Service Offerings" />
+          <BulletItem text="Specialized Facilities" />
         </div>
-        <Button
-          className="font-medium text-xl tracking-wide rounded-full py-8 px-10 bg-[#183453] text-white"
-          size="lg"
-        >
-          About Us
-        </Button>
+        <Link href="/about">
+          <Button className="font-medium  text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+            About Us
+          </Button>
+        </Link>
       </div>
-      <div className="flex relative flex-1">
+      <div className="flex relative mt-12 md:mt-0 flex-1">
         <div className="h-auto w-auto">
           <Image
             src="/home-about.png"
@@ -38,7 +50,7 @@ const About = () => {
             className="rounded-xl border-2 border-[#183453]"
           />
         </div>
-        <div className="absolute bg-white  rounded border border-[#183453]  bottom-[-30] right-2">
+        <div className="absolute bg-white  rounded border border-[#183453] bottom-[-50] md:bottom-[-30] right-2">
           <div className="flex flex-row gap-8 px-8 py-4 relative">
             <div className="flex flex-col gap-1">
               <p className="text-xl font-bold">6</p>
@@ -46,7 +58,7 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-1">
               <p className="text-xl font-bold">150+</p>
-              <p className="font-medium">Team members</p>
+              <p className="font-medium">Team Members</p>
             </div>
             <div className="absolute top-[-20] right-[-20]">
               <Image
