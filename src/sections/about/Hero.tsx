@@ -19,7 +19,7 @@ const Hero = () => {
             Building Better Pet Care Together
           </h1>
           <p className="pt-4 hero-text font-semibold">
-            We're uniting local pet care brands to create exceptional
+            We&apos;re uniting local pet care brands to create exceptional
             experiences for pets and their families
           </p>
           <Image

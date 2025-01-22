@@ -43,7 +43,7 @@ const ServicesHighlight = () => {
           <p className="pt-4 hero-text font-semibold">
             At Embark Pet Services, we understand that your pet deserves the
             best. Our extensive range of services ensures that every aspect of
-            your pet's care is covered, from grooming to veterinary needs.
+            your pet&apos;s care is covered, from grooming to veterinary needs.
             Experience peace of mind knowing your furry friend is in expert
             hands.
           </p>

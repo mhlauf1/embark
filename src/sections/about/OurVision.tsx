@@ -55,7 +55,7 @@ const Vision = () => {
           <IoPaw size={48} color="#183453" />
           <h2 className="mt-4">Our Vision</h2>
           <p className="mt-6 mb-4 w-[55ch] text-xl leading-[160%]">
-            We're building a network that elevates pet care standards while
+            We&apos;re building a network that elevates pet care standards while
             preserving the local relationships our communities trust.
           </p>
           <p className="w-[55ch] text-xl leading-[160%]">
