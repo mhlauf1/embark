@@ -39,7 +39,9 @@ const Health = () => {
           />
           <p className="font-semibold text-xl capitalize">Health & Wellness</p>
         </div>
-        <h2 className="mt-8">Comprehensive veterinary and training services</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+          Comprehensive veterinary and training services
+        </h2>
         <p className="my-12 w-[85%] text-xl font-medium">
           From routine check-ups & specialized care to breed-specific training,
           we&apos; re here to support your pet&apos; s health and development at

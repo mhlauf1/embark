@@ -21,7 +21,9 @@ const About = () => {
               Local care your <span className="underline"> can</span> trust
             </p>
           </div>
-          <h2>Premier Pet Care</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
+            Premier Pet Care
+          </h2>
         </div>
         <p className="text-lg md:text-xl mt-4 md:mt-6 w-[95%] md:w-[90%]">
           A network of trusted, local pet care providers delivering

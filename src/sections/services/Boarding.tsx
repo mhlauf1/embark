@@ -39,7 +39,9 @@ const Boarding = () => {
           />
           <p className="font-semibold text-xl capitalize">Boarding</p>
         </div>
-        <h2 className="mt-8">Safe, Secure Stays When You&apos;re Away</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+          Safe, Secure Stays When You&apos;re Away
+        </h2>
         <p className="my-12 w-[85%] text-xl font-medium">
           Give your pet a comfortable home away from home in our modern boarding
           facilities with personalized care, structured night-time routines, and

@@ -41,28 +41,32 @@ const visionData = [
 ];
 
 const VisionItem = ({ Icon, title }: VisionItemProps) => (
-  <div className="flex rounded-xl border-[#183453]/50 bg-[#EFF9FF] h-full py-20 flex-col items-center justify-center">
+  <div className="flex rounded-xl border-[#183453]/50 bg-[#EFF9FF] h-full py-16 md:py-20 flex-col items-center justify-center">
     <Icon size={48} className="flex-shrink-0" />
-    <h3 className="text-3xl font-semibold pt-4 px-6 text-center">{title}</h3>
+    <h3 className="text-2xl md:text-3xl font-semibold pt-4 px-6 text-center">
+      {title}
+    </h3>
   </div>
 );
 
 const Vision = () => {
   return (
-    <section className="bg-white pt-36 pb-48">
+    <section className="bg-white pt-24 md:pt-36 pb-36 md:pb-48">
       <div className="px-8 max-w-screen-2xl mx-auto">
         <div className="flex items-start flex-col">
           <IoPaw size={48} color="#183453" />
-          <h2 className="mt-4">Our Vision</h2>
-          <p className="mt-6 mb-4 w-[55ch] text-xl leading-[160%]">
+          <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
+            Our Vision
+          </h2>
+          <p className="mt-6 mb-4 w-auto md:w-[55ch] text-lg md:text-xl leading-[160%]">
             We&apos;re building a network that elevates pet care standards while
             preserving the local relationships our communities trust.
           </p>
-          <p className="w-[55ch] text-xl leading-[160%]">
+          <p className="w-auto md:w-[55ch] text-lg md:text-xl leading-[160%]">
             Through shared expertise and resources, we empower each location to
             deliver exceptional care with the backing of a broader network
           </p>
-          <div className="grid w-full mt-16 grid-cols-3  gap-6">
+          <div className="grid w-full mt-16 grid-cols-1 md:grid-cols-3  gap-6">
             {visionData.map((item) => (
               <div key={item.id}>
                 <VisionItem Icon={item.Icon} title={item.title} />

@@ -67,12 +67,14 @@ const MissionItem = ({ src, title, bullets }: MissionItemProps) => (
 
 const Mission = () => {
   return (
-    <section className="bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF]  py-36">
+    <section className="bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF] py-24 md:py-36">
       <div className=" px-8 max-w-screen-2xl mx-auto">
         <div className="flex items-center flex-col">
           <IoPaw size={48} color="#183453" />
-          <h2 className="mt-4">Our Mission</h2>
-          <div className="grid mt-12 grid-cols-3 gap-8">
+          <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
+            Our Mission
+          </h2>
+          <div className="grid mt-12 grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
             {missionData.map((item) => (
               <div key={item.id}>
                 <MissionItem

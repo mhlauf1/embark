@@ -34,7 +34,7 @@ const WhyUs = () => {
                   Professional Pet Care Network
                 </p>
               </div>
-              <h2 className="w-auto md:w-[16ch]">
+              <h2 className="text-4xl w-auto md:w-[16ch] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
                 Quality Care Built On Trust and Expertis
               </h2>
             </div>

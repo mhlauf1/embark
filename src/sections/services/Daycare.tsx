@@ -6,7 +6,7 @@ import { FaRegLightbulb } from "react-icons/fa";
 
 const Daycare = () => {
   return (
-    <div className="flex flex-row gap-12 items-start">
+    <div className="flex flex-col md:flex-row gap-12 items-start">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
           <Image
@@ -17,13 +17,15 @@ const Daycare = () => {
           />
           <p className="font-semibold text-xl capitalize">Daycare</p>
         </div>
-        <h2 className="mt-8">Where Every Day is an adventure</h2>
-        <p className="my-12 w-[85%] text-xl font-medium">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+          Where Every Day is an adventure
+        </h2>
+        <p className="my-6 md:my-12 md:w-[85%] text-xl font-medium">
           Keep your pet active and engaged with supervised play sessions
           throughout the day. Our professional staff ensures safe socialization
           while maintaining the perfect balance of activity and rest
         </p>
-        <div className="flex flex-row items-start gap-16">
+        <div className="flex flex-row justify-center w-full md:items-start gap-8 md:gap-16">
           <div className="flex flex-col gap-2 items-center">
             <MdSupervisedUserCircle size={48} />
             <p>Supervised Play</p>
@@ -38,7 +40,7 @@ const Daycare = () => {
           </div>
         </div>
       </div>
-      <div className="flex relative flex-1 items-end flex-col gap-2">
+      <div className="flex relative flex-1 md:items-end flex-col gap-2">
         <div className="flex flex-row w-full gap-2">
           <Image
             src="/bone-lg.png"

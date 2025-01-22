@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="h-[90vh] bg-gradient-to-b from-[#C8E2FF] to-[#9CD8F6]  py-12">
+    <section className="h-auto md:h-[90vh] bg-gradient-to-b from-[#C8E2FF] to-[#9CD8F6] py-24 md:py-12">
       <div className="items-center justify-between h-full flex md:flex-row px-8 flex-col max-w-screen-2xl mx-auto">
         <div className="flex flex-1 items-start flex-col gap-6">
           <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
@@ -13,24 +13,19 @@ const Hero = () => {
               width={24}
               alt="Paw Prints"
             />
-            <p className="font-semibold text-xl capitalize">About Embark</p>
+            <p className="font-semibold text-lg md:text-xl capitalize">
+              About Embark
+            </p>
           </div>
-          <h1 className="hero-title capitalize w-[12ch]">
+          <h1 className="text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl text-start capitalize ">
             Building Better Pet Care Together
           </h1>
-          <p className="pt-4 hero-text font-semibold">
+          <p className="pt-4 text-lg md:text-xl w-auto md:w-[42ch] font-semibold">
             We&apos;re uniting local pet care brands to create exceptional
             experiences for pets and their families
           </p>
-          <Image
-            src="/dogs-sitting-drawing.png"
-            alt="Embark Services"
-            height={124}
-            className="mt-[12vh]"
-            width={150}
-          />
         </div>
-        <div className="flex-1 flex items-end justify-end">
+        <div className="mt-12 md:mt-0 flex items-end justify-end">
           <Image
             src="/about-main.png"
             height={624}

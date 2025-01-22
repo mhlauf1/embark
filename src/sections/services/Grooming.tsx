@@ -17,7 +17,9 @@ const Grooming = () => {
           />
           <p className="font-semibold text-xl capitalize">Grooming</p>
         </div>
-        <h2 className="mt-8"> A Day At The Spa… Or A Much-Needed Bath</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+          A Day At The Spa… Or A Much-Needed Bath
+        </h2>
         <p className="my-12 w-[85%] text-xl font-medium">
           Our breed-specific grooming services range from ongoing hygiene
           maintenance to full spa blow-outs. Each grooming service combines

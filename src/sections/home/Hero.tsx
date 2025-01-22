@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
       <div className="items-center justify-between h-full flex md:flex-row px-[5%] md:px-8 flex-col md:max-w-screen-2xl mx-auto">
         <div className="flex flex-1 px-4 flex-col gap-6">
-          <h1 className="hero-title text-center md:text-start capitalize ">
+          <h1 className="text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl text-center md:text-start capitalize ">
             Caring for your{" "}
             <span className="text-[#9CD8F6]">
               {" "}
