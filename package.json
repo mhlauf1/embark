@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@heroui/react": "^2.6.13",
-    "framer-motion": "^11.18.1",
+    "@react-google-maps/api": "^2.20.5",
+    "framer-motion": "^11.18.2",
     "next": "15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

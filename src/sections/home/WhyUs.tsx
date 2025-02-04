@@ -18,8 +18,25 @@ const WhyUsBulletItem = ({ text, title }: { text: string; title: string }) => (
 
 const WhyUs = () => {
   return (
-    <section className="bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF] py-24 md:py-36">
-      <div className=" px-8 max-w-screen-2xl mx-auto">
+    <section className="bg-gradient-to-b relative from-[#F9FDFF] to-[#EEF9FF] py-24 md:py-36">
+      <div className="absolute top-[-70px] rotate-180 left-0 w-full overflow-hidden">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,20 
+      C480,100 960,-60 1440,20
+      L1440,120 
+      L0,120 Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div className=" px-8 max-w-screen-2xl pt-24 pb-12 mx-auto">
         <div className="justify-between flex md:flex-row  flex-col">
           <div className="flex items-start gap-6 md:items-end flex-col md:flex-row justify-between w-full">
             <div className="flex flex-col gap-4 items-start">

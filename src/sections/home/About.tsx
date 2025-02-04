@@ -7,7 +7,7 @@ import { BulletItem } from "@/components/BulletItem";
 
 const About = () => {
   return (
-    <section className="py-24 md:py-40 px-8 items-start justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
+    <section className="py-24 md:py-40 px-8 items-start  justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-start flex-1">
         <div className="flex flex-col gap-4 items-start">
           <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">

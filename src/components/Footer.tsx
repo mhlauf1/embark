@@ -12,12 +12,12 @@ const Footer = () => {
         alt="Large Bone"
         height={90}
         width={90}
-        className="absolute top-[-40] rotate-45 left-[40%] md:left-[47%]"
+        className="absolute top-[-45px] rotate-45 left-[40%] md:left-[47%]"
       />
-      <div className="bg-[#183453] h-[300px] w-full"></div>
+      {/* <div className="bg-[#183453] h-[300px] w-full"></div> */}
       <div className=" px-8 max-w-screen-2xl  w-full mx-auto">
         <div className="flex flex-col flex-grow items-center justify-center">
-          <div className="flex mt-[-15vh] w-full flex-col md:flex-row gap-4">
+          <div className="flex mt-24 w-full flex-col md:flex-row gap-4">
             <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-10 md:py-16 px-8 md:px-12 flex-col gap-4">
               <div className="w-[64px] md:w-[82px] relative h-[64px] md:h-[82px]">
                 <Image src="/small-white-paw.png" alt="Dog Paw" fill />
