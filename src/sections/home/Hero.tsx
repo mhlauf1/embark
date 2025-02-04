@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-b min-h-screen from-[#F9FDFF] to-[#EEF9FF] pb-32 pt-16 md:py-12">
-      <div className="absolute top-[25px] left-[2%] md:left-[5%]">
+    <section className="relative bg-gradient-to-b min-h-screen z-[-2] from-[#F9FDFF] to-[#EEF9FF] pb-32 pt-16 md:py-12">
+      <div className="absolute z-[-1] top-[25px] left-[2%] md:left-[5%]">
         <Image
           src="/bg-paw.png"
           height={800}
@@ -15,7 +15,7 @@ const Hero = () => {
         />
       </div>
       <div className="items-center justify-between h-full flex md:flex-row px-[5%] md:px-8 flex-col md:max-w-screen-2xl mx-auto">
-        <div className="flex flex-1 px-4 flex-col gap-6">
+        <div className="flex z-5 flex-1 px-4 flex-col gap-6">
           <h1 className="text-5xl font-bold tracking-tighter md:text-6xl lg:text-7xl xl:text-8xl text-center md:text-start capitalize ">
             Caring for your{" "}
             <span className="text-[#9CD8F6]">
