@@ -21,7 +21,7 @@ const About = () => {
               Local care your <span className="underline"> can</span> trust
             </p>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
             Premier Pet Care
           </h2>
         </div>
@@ -52,7 +52,7 @@ const About = () => {
             className="rounded-xl border-2 border-[#183453]"
           />
         </div>
-        <div className="absolute bg-white  rounded border border-[#183453] bottom-[-50] md:bottom-[-30] right-2">
+        <div className="absolute bg-white  rounded border border-[#183453] bottom-[-50px] md:bottom-[-30px] right-2">
           <div className="flex flex-row gap-8 px-8 py-4 relative">
             <div className="flex flex-col gap-1">
               <p className="text-xl font-bold">6</p>
@@ -62,7 +62,7 @@ const About = () => {
               <p className="text-xl font-bold">150+</p>
               <p className="font-medium">Team Members</p>
             </div>
-            <div className="absolute top-[-20] right-[-20]">
+            <div className="absolute top-[-20px] right-[-20px]">
               <Image
                 src="/small-white-paw.png"
                 alt="Paw"

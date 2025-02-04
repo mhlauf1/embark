@@ -3,7 +3,15 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="h-auto bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF]  py-12">
+    <section className="h-auto bg-gradient-to-b from-[#F9FDFF] relative to-[#EEF9FF]  pt-12 pb-36">
+      <div className="absolute top-24 right-[10vw]">
+        <Image
+          src="/blue-circles.png"
+          alt="Blue Circles"
+          height={40}
+          width={50}
+        />
+      </div>
       <div className="items-center justify-center flex  px-8 flex-col max-w-screen-2xl py-12 mx-auto">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
           <Image
@@ -22,17 +30,26 @@ const Hero = () => {
           mission, managed by long-term, local staff with deep connections to
           their communities
         </p>
-        <p className="mt-[10vh] text-lg text-center w-[74ch] font-semibold">
+        <p className="mt-[10vh] mb-4 opacity-70 text-center w-[74ch] font-semibold">
           Embark delivers a comprehensive suite of pet services focused on
           quality and reliability.
         </p>
-        <Image
-          src="/network-hero.png"
-          height={680}
-          width={1245}
-          alt="Embark's Netowkr"
-          className="rounded-2xl border border-[#183453] mt-4"
-        />
+        <div className="relative">
+          <Image
+            src="/network-hero.png"
+            height={680}
+            width={1245}
+            alt="Embark's Netowkr"
+            className="rounded-2xl border border-[#183453] mt-4"
+          />
+          <Image
+            className="absolute bottom-[-60px] left-[-60px]"
+            src="/sticker.png"
+            alt="Embark sticker"
+            height={170}
+            width={170}
+          />
+        </div>
       </div>
     </section>
   );

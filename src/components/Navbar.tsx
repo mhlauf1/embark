@@ -13,7 +13,7 @@ import Image from "next/image";
 const Nav = () => {
   return (
     <Navbar
-      className="px-[5%] z-10 py-2 bg-white border-b shadow-sm"
+      className="px-[5%] z-20 py-2 bg-white border-b shadow-sm"
       maxWidth="full"
     >
       <NavbarBrand>
