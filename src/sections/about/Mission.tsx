@@ -1,6 +1,5 @@
 "use client";
 import { FaCheck } from "react-icons/fa6";
-import { IoPaw } from "react-icons/io5";
 import Image from "next/image";
 
 interface MissionItemProps {

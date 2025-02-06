@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { BulletItem } from "@/components/BulletItem";
 import { Button } from "@heroui/react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";

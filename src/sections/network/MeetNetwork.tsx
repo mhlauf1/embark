@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { IoPaw } from "react-icons/io5";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 import Link from "next/link";
@@ -100,7 +99,9 @@ const MeetNetwork = () => {
             width={24}
             alt="Paw Prints"
           />
-          <p className="font-semibold capitalize">Midwest's Trusted Pet Care</p>
+          <p className="font-semibold capitalize">
+            Midwest&apos;s Trusted Pet Care
+          </p>
         </div>
         <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
           Meet our network
