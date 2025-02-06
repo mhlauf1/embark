@@ -67,14 +67,24 @@ const MissionItem = ({ src, title, bullets }: MissionItemProps) => (
 
 const Mission = () => {
   return (
-    <section className="bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF] py-24 md:py-36">
-      <div className=" px-8 max-w-screen-2xl mx-auto">
-        <div className="flex items-center flex-col">
-          <IoPaw size={48} color="#183453" />
-          <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
+    <section className="py-12 relative md:py-16">
+      <div className=" px-8 mx-16 py-12 md:py-32 bg-white   rounded-xl">
+        <div className="flex max-w-screen-2xl mx-auto items-center flex-col">
+          <div className="border border-[#183453]/50 rounded-full bg-white py-1 flex flex-row items-center gap-2 px-3">
+            <Image
+              src="/badge-paws.png"
+              height={18}
+              width={24}
+              alt="Paw Prints"
+            />
+            <p className="font-semibold text-lg md:text-xl capitalize">
+              Elevating pet care
+            </p>
+          </div>
+          <h2 className="text-4xl mt-8 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
             Our Mission
           </h2>
-          <div className="grid mt-12 grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
+          <div className="grid mt-20 grid-cols-1 md:grid-cols-3 gap-16 px-16 md:gap-8">
             {missionData.map((item) => (
               <div key={item.id}>
                 <MissionItem
@@ -86,6 +96,23 @@ const Mission = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-[-100px] rotate-180 left-0 w-full overflow-hidden">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-[200px]"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,40 
+    C380,80 660,-20 1440,30
+    L1440,120 
+    L0,120 Z"
+            fill="white"
+          />
+        </svg>
       </div>
     </section>
   );

@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="flex flex-col flex-grow items-center justify-center">
           <div className="flex mt-24 w-full flex-col md:flex-row gap-4">
             <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-10 md:py-16 px-8 md:px-12 flex-col gap-4">
-              <div className="w-[64px] md:w-[82px] relative h-[64px] md:h-[82px]">
+              <div className="w-[64px] md:w-[72px] relative h-[64px] md:h-[72px]">
                 <Image src="/small-white-paw.png" alt="Dog Paw" fill />
               </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
               </Button>
             </div>
             <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-10 md:py-16 px-8 md:px-12 flex-col gap-4">
-              <div className="w-[64px] md:w-[82px] relative h-[64px] md:h-[82px]">
+              <div className="w-[64px] md:w-[72px] relative h-[64px] md:h-[72px]">
                 <Image src="/small-white-paw.png" alt="Dog Paw" fill />
               </div>
 
@@ -55,6 +55,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col text-[#183453]/60 text-sm mt-16 gap-8 items-center">
           <ul className="flex gap-8">
+            <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>
             <Link href="/network">Network</Link>

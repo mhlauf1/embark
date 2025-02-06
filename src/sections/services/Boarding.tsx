@@ -6,7 +6,7 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 
 const Boarding = () => {
   return (
-    <div className="flex flex-row gap-12 items-start">
+    <div className="flex flex-row gap-12 py-12 items-start">
       <div className="relative flex-[1] min-h-[300px]">
         <div className="absolute top-0 pr-12 left-0 w-3/5">
           <Image
@@ -42,7 +42,7 @@ const Boarding = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
           Safe, Secure Stays When You&apos;re Away
         </h2>
-        <p className="my-12 w-[85%] text-xl font-medium">
+        <p className="my-6 md:my-8 w-[85%] text-xl font-medium">
           Give your pet a comfortable home away from home in our modern boarding
           facilities with personalized care, structured night-time routines, and
           plenty of attention

@@ -93,8 +93,18 @@ const MeetNetwork = () => {
   return (
     <section className="bg-white flex flex-col py-48">
       <div className="flex px-8 flex-col items-center justify-center  max-w-screen-2xl mx-auto">
-        <IoPaw size={48} color="#183453" />
-        <h2 className="mt-4">Meet our network</h2>
+        <div className="border border-[#183453]/50 bg-[#9CD8F6] rounded-full py-1 flex items-center gap-2 px-3">
+          <Image
+            src="/badge-paws.png"
+            height={18}
+            width={24}
+            alt="Paw Prints"
+          />
+          <p className="font-semibold capitalize">Midwest's Trusted Pet Care</p>
+        </div>
+        <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
+          Meet our network
+        </h2>
         <p className="pt-8 text-lg text-center w-[74ch]">
           Five trusted local brands delivering quality pet care across the
           Midwest

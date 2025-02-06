@@ -20,28 +20,28 @@ const Grooming = () => {
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
           A Day At The Spa… Or A Much-Needed Bath
         </h2>
-        <p className="my-12 w-[85%] text-xl font-medium">
+        <p className="my-6 md:my-8 w-[85%] text-xl font-medium">
           Our breed-specific grooming services range from ongoing hygiene
           maintenance to full spa blow-outs. Each grooming service combines
           trained expertise with premium products in our safe, well-equipped
           facilities
         </p>
-        <div className="flex flex-row items-start gap-16">
-          <div className="flex w-fit flex-col gap-2 items-center">
+        <div className="grid grid-cols-4 w-[75%] gap-8">
+          <div className="flex flex-col gap-2 w-fit items-center text-center">
             <FaBath size={48} />
-            <p>Baths</p>
+            <p className="whitespace-nowrap">Baths</p>
           </div>
-          <div className="flex  w-fit  flex-col gap-2 items-center">
+          <div className="flex flex-col  w-fit gap-2 items-center text-center">
             <Image src="/dog-ear.png" height={48} width={48} alt="Grooming" />
-            <p>Ears</p>
+            <p className="whitespace-nowrap">Ears</p>
           </div>
-          <div className="flex  w-fit  flex-col gap-2 items-center">
+          <div className="flex flex-col  w-fit gap-2 items-center text-center">
             <RiToothLine size={48} />
-            <p>Teeth & Nails</p>
+            <p className="whitespace-nowrap">Teeth & Nails</p>
           </div>
-          <div className="flex  w-fit  flex-col gap-2 items-center">
+          <div className="flex flex-col  w-fit gap-2 items-center text-center">
             <RiScissors2Line size={48} />
-            <p>Cuts & Spa Days</p>
+            <p className="whitespace-nowrap">Cuts & Spa Days</p>
           </div>
         </div>
       </div>

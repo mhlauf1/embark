@@ -39,7 +39,7 @@ const WhyUs = () => {
       <div className=" px-8 max-w-screen-2xl pt-24 pb-12 mx-auto">
         <div className="justify-between flex md:flex-row  flex-col">
           <div className="flex items-start gap-6 md:items-end flex-col md:flex-row justify-between w-full">
-            <div className="flex flex-col gap-4 items-start">
+            <div className="flex flex-col gap-8 items-start">
               <div className="border bg-white border-[#183453]/50 rounded-full py-1 flex flex-row items-center gap-2 px-3">
                 <Image
                   src="/badge-paws.png"
@@ -52,7 +52,7 @@ const WhyUs = () => {
                 </p>
               </div>
               <h2 className="text-4xl w-auto md:w-[16ch] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
-                Quality Care Built On Trust and Expertis
+                Quality Care Built On Trust and Experts
               </h2>
             </div>
             <div className="flex justify-end flex-1">
@@ -91,29 +91,33 @@ const WhyUs = () => {
           <div className="flex mt-12 md:mt-0 flex-row w-fit gap-4">
             <div className="flex flex-col gap-4 mt-auto items-center">
               <Image alt="bone" src="/bone-lg.png" height={124} width={124} />
-              <Image
-                alt="Why Choose Embark?"
-                src="/why-us-1.png"
-                className="rounded-xl border-2 border-[#183453]"
-                height={415}
-                width={330}
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-[400px] border-2 border-[#183453]  rounded-xl object-cover"
+              >
+                <source src="/blue-bg-vid.mp4" type="video/mp4" />
+              </video>
             </div>
             <div className="space-y-4">
               <Image
                 alt="Why Choose Embark?"
-                src="/why-us-2.png"
+                src="/cat-trimming.jpg"
                 className="rounded-xl border-2 border-[#183453]"
-                height={310}
+                height={300}
                 width={420}
               />
-              <Image
-                alt="Why Choose Embark?"
-                src="/why-us-3.png"
-                className="rounded-xl border-2 border-[#183453]"
-                height={280}
-                width={420}
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-[420px] border-2 border-[#183453]  rounded-xl object-cover"
+              >
+                <source src="/why-us-vid.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

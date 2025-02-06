@@ -12,7 +12,7 @@ const Hero = () => {
           width={50}
         />
       </div>
-      <div className="items-center justify-center flex  px-8 flex-col max-w-screen-2xl py-12 mx-auto">
+      <div className="items-start justify-center flex  px-8 flex-col max-w-screen-2xl  py-12 mx-auto">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
           <Image
             src="/badge-paws.png"
@@ -24,24 +24,34 @@ const Hero = () => {
             Professional Care, Local Heart
           </p>
         </div>
-        <h1 className="hero-title mt-4 capitalize">The Embark Network</h1>
-        <p className="pt-8 hero-text text-center w-[74ch]">
+        <h1 className="hero-title mt-8 tracking-tighter capitalize">
+          The Embark Network
+        </h1>
+        <p className="pt-6 hero-text text-start  w-[74ch]">
           A community of premium pet care facilities operating under one shared
           mission, managed by long-term, local staff with deep connections to
           their communities
         </p>
-        <p className="mt-[10vh] mb-4 opacity-70 text-center w-[74ch] font-semibold">
-          Embark delivers a comprehensive suite of pet services focused on
-          quality and reliability.
-        </p>
-        <div className="relative">
-          <Image
-            src="/network-hero.png"
-            height={680}
-            width={1245}
-            alt="Embark's Netowkr"
-            className="rounded-2xl border border-[#183453] mt-4"
-          />
+        <div className="relative mt-10 w-full">
+          <div className="relative">
+            <div
+              className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent z-[1] rounded-2xl pointer-events-none"
+              style={{ height: "35%" }}
+            ></div>
+            <p className="text-white absolute top-[58px] left-[42px] z-10 text-start w-[38ch] text-xl  font-semibold">
+              Embark delivers a comprehensive suite of pet services focused on
+              quality and reliability.
+            </p>
+            <div className="w-full relative h-[700px]">
+              <Image
+                src="/network-hero.png"
+                fill
+                alt="Embark's Network"
+                className="rounded-2xl object-cover border border-[#183453]"
+                sizes="100vw"
+              />
+            </div>
+          </div>
           <Image
             className="absolute bottom-[-60px] left-[-60px]"
             src="/sticker.png"

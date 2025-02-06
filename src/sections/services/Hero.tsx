@@ -3,9 +3,17 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="h-auto md:h-[90vh] bg-gradient-to-b from-[#F9FDFF] to-[#EEF9FF] py-24 md:py-12">
-      <div className="items-center justify-between h-full flex md:flex-row px-8 flex-col max-w-screen-2xl mx-auto">
-        <div className="flex flex-1 items-start flex-col gap-6">
+    <>
+      <section className="h-auto bg-gradient-to-b from-[#F9FDFF] relative to-[#EEF9FF]  pt-12 pb-36">
+        <div className="absolute top-24 right-[10vw]">
+          <Image
+            src="/blue-circles.png"
+            alt="Blue Circles"
+            height={40}
+            width={50}
+          />
+        </div>
+        <div className="items-start justify-center flex  px-8 flex-col max-w-screen-2xl  py-12 mx-auto">
           <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
             <Image
               src="/badge-paws.png"
@@ -13,38 +21,48 @@ const Hero = () => {
               width={24}
               alt="Paw Prints"
             />
-            <p className="font-semibold text-lg md:text-xl capitalize">
+            <p className="font-semibold text-xl capitalize">
               Professional Care, Local Heart
             </p>
           </div>
-          <h1 className="text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl xl:text-8xl text-start capitalize ">
+          <h1 className="hero-title mt-8 tracking-tighter  capitalize">
             Every need for your beloved pet
           </h1>
-          <p className="pt-4 text-lg md:text-xl w-auto md:w-[42ch] font-semibold">
+          <p className="pt-6 hero-text text-start text-medium w-[54ch]">
             Focused on quality and reliability, Embark delivers a comprehensive
             suite of services across its network
           </p>
-          <div className="hidden md:block">
+          <div className="relative mt-10 w-full">
+            <div className="relative">
+              <div
+                className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent z-[1] rounded-2xl pointer-events-none"
+                style={{ height: "35%" }}
+              ></div>
+              <p className="text-white absolute top-[58px] left-[42px] z-10 text-start w-[38ch] text-xl font-semibold">
+                Embark delivers a comprehensive suite of pet services focused on
+                quality and reliability.
+              </p>
+              <div className="w-full relative h-[700px]">
+                <Image
+                  src="/network-hero.png"
+                  fill
+                  alt="Embark's Network"
+                  className="rounded-2xl object-cover border border-[#183453]"
+                  sizes="100vw"
+                />
+              </div>
+            </div>
             <Image
-              src="/3-paws.png"
-              alt="Embark Services"
-              height={60}
-              className="mt-24"
-              width={58}
+              className="absolute bottom-[-60px] left-[-60px]"
+              src="/sticker.png"
+              alt="Embark sticker"
+              height={170}
+              width={170}
             />
           </div>
         </div>
-
-        <div className="flex-1 mt-16 md:mt-0 flex items-end justify-end">
-          <Image
-            src="/about-hero.png"
-            height={624}
-            width={624}
-            alt="Dog bathing"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

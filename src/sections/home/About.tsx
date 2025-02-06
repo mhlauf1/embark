@@ -7,9 +7,9 @@ import { BulletItem } from "@/components/BulletItem";
 
 const About = () => {
   return (
-    <section className="py-24 md:py-40 px-8 items-start  justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
+    <section className="pb-24 pt-16 md:pt-28 md:pb-40 px-8 items-start  justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-start flex-1">
-        <div className="flex flex-col gap-4 items-start">
+        <div className="flex flex-col gap-8 items-start">
           <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">
             <Image
               src="/badge-paws.png"
@@ -30,7 +30,7 @@ const About = () => {
           comprehensive services with a focus on quality, reliability, and
           safety
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-y-4 mt-6 md:mt-8 mb-10 md:mb-16">
+        <div className="grid grid-cols-1 w-[100%] gap-y-4 mt-4 md:mt-6 mb-8 md:mb-12">
           <BulletItem text="Professional Expertise" />
           <BulletItem text="Local Trusted Teams" />
           <BulletItem text="Comprehensive Service Offerings" />

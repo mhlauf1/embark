@@ -33,11 +33,11 @@ const ServiceItem = ({ text, image }: { text: string; image: string }) => (
 );
 const ServicesHighlight = () => {
   return (
-    <section className="py-24 md:py-36 ">
+    <section className="py-24  md:py-36 ">
       <div className="max-w-screen-2xl mx-auto px-8 flex flex-col">
         <div className="flex flex-col gap-4 items-start">
           <Image src="/ball.png" height={60} width={60} alt="Paw Prints" />
-          <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize w-auto md:w-[16ch]">
+          <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize w-auto md:w-[20ch]">
             Professional Pet Services Tailored for You
           </h2>
           <p className="pt-2 md:pt-4 md:px-0 text-start hero-text font-semibold">

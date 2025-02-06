@@ -6,6 +6,6 @@ export const BulletItem = ({ text }: { text: string }) => (
     <div className="p-1 mt-1 rounded-full bg-[#8DD6FA] ">
       <FaCheck size={12} color="white" />
     </div>
-    <p className="text-2xl w-fit font-medium">{text}</p>
+    <p className="text-xl w-fit font-medium">{text}</p>
   </div>
 );
