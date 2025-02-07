@@ -29,7 +29,7 @@ const Hero = () => {
                   </button>
                 </Link>
               </div>
-              <p className="pt-2 md:pt-4 text-start text-lg md:text-xl font-semibold">
+              <p className="md:pt-4 text-start text-lg md:text-xl font-semibold">
                 We unite local pet care brands under one standard of excellence
               </p>
             </div>
