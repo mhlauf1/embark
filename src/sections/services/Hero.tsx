@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
             <Image
               className="absolute hidden md:block bottom-[-90px] md:bottom-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
-              src="/badge-white.png"
+              src="/white-badge.svg"
               alt="Embark sticker"
               height={170}
               width={170}
