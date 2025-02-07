@@ -76,7 +76,7 @@ const Hero = () => {
                 loop
                 muted
                 playsInline
-                className="w-full border-2 border-[#183453] h-full rounded-md md:rounded-xl object-cover"
+                className="w-full h-full rounded-md md:rounded-xl object-cover"
               >
                 <source src="/hero-vid.mp4" type="video/mp4" />
               </video>
