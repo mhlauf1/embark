@@ -6,7 +6,7 @@ import { FaRegLightbulb } from "react-icons/fa";
 
 const Daycare = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-12 items-start">
+    <div className="flex flex-col md:flex-row gap-16 items-center">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
           <Image
@@ -49,22 +49,22 @@ const Daycare = () => {
             width={90}
             className="absolute top-[-40] left-[-40]"
           />
-          <div className="h-auto  flex flex-1 w-full">
+          <div className="flex flex-1">
             <Image
               alt="Daycare"
               src="/daycare-1.png"
-              className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
-              height={100}
-              width={100}
+              className="rounded-xl border border-[#183453] object-cover"
+              height={400}
+              width={500}
             />
           </div>
-          <div className="h-auto flex flex-1 w-full">
+          <div className="flex flex-1">
             <Image
               alt="Daycare"
               src="/daycare-2.png"
-              className="rounded-xl border flex flex-1 border-[#183453]"
-              height={100}
-              width={100}
+              className="rounded-xl border border-[#183453] object-cover"
+              height={400}
+              width={350}
             />
           </div>
         </div>

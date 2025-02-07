@@ -33,9 +33,9 @@ const Hero = () => {
         </div>
         <div className="mt-12 md:mt-0 flex items-end justify-end">
           <Image
-            src="/about-main.png"
-            height={624}
-            width={624}
+            src="/about-hero.png"
+            height={575}
+            width={625}
             alt="Dog bathing"
           />
         </div>

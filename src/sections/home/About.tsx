@@ -7,7 +7,7 @@ import { BulletItem } from "@/components/BulletItem";
 
 const About = () => {
   return (
-    <section className="pb-24 pt-16 md:pt-28 md:pb-40 px-8 items-start  justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
+    <section className="py-28 md:py-40 px-8 items-start  justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-start flex-1">
         <div className="flex flex-col gap-8 items-start">
           <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">
@@ -45,7 +45,7 @@ const About = () => {
       <div className="flex relative mt-12 md:mt-0 flex-1">
         <div className="h-auto w-auto">
           <Image
-            src="/home-about.png"
+            src="/about-us-home.jpg"
             height={500}
             width={760}
             alt="Dog bathing"

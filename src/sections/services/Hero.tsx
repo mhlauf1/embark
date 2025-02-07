@@ -34,19 +34,11 @@ const Hero = () => {
           </p>
           <div className="relative mt-10 w-full">
             <div className="relative">
-              <div
-                className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent z-[1] rounded-2xl pointer-events-none"
-                style={{ height: "35%" }}
-              ></div>
-              <p className="text-white absolute top-[58px] left-[42px] z-10 text-start w-[38ch] text-xl font-semibold">
-                Embark delivers a comprehensive suite of pet services focused on
-                quality and reliability.
-              </p>
-              <div className="w-full relative h-[700px]">
+              <div className="w-full relative h-[80vh]">
                 <Image
-                  src="/network-hero.png"
+                  src="/service-2.png"
                   fill
-                  alt="Embark's Network"
+                  alt="Embark's Services"
                   className="rounded-2xl object-cover border border-[#183453]"
                   sizes="100vw"
                 />
@@ -54,7 +46,7 @@ const Hero = () => {
             </div>
             <Image
               className="absolute bottom-[-60px] left-[-60px]"
-              src="/sticker.png"
+              src="/badge-white.png"
               alt="Embark sticker"
               height={170}
               width={170}

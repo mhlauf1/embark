@@ -6,7 +6,7 @@ import { FaBath } from "react-icons/fa";
 
 const Grooming = () => {
   return (
-    <div className="flex flex-row mt-24 gap-12 items-start">
+    <div className="flex flex-row mt-24 gap-16 items-center">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
           <Image
@@ -26,45 +26,45 @@ const Grooming = () => {
           trained expertise with premium products in our safe, well-equipped
           facilities
         </p>
-        <div className="grid grid-cols-4 w-[75%] gap-8">
-          <div className="flex flex-col gap-2 w-fit items-center text-center">
+        <div className="flex flex-row justify-center gap-8 md:gap-16">
+          <div className="flex flex-col gap-2 items-center text-center">
             <FaBath size={48} />
             <p className="whitespace-nowrap">Baths</p>
           </div>
-          <div className="flex flex-col  w-fit gap-2 items-center text-center">
+          <div className="flex flex-col  gap-2 items-center text-center">
             <Image src="/dog-ear.png" height={48} width={48} alt="Grooming" />
             <p className="whitespace-nowrap">Ears</p>
           </div>
-          <div className="flex flex-col  w-fit gap-2 items-center text-center">
+          <div className="flex flex-col  gap-2 items-center text-center">
             <RiToothLine size={48} />
             <p className="whitespace-nowrap">Teeth & Nails</p>
           </div>
-          <div className="flex flex-col  w-fit gap-2 items-center text-center">
+          <div className="flex flex-col  gap-2 items-center text-center">
             <RiScissors2Line size={48} />
             <p className="whitespace-nowrap">Cuts & Spa Days</p>
           </div>
         </div>
       </div>
       <div className="flex relative flex-1 items-end flex-col gap-2">
-        <div className="flex flex-row w-full gap-2">
+        <div className="flex flex-col w-full gap-2">
           <div className="h-auto  flex flex-1 w-full">
             <Image
               alt="Daycare"
-              src="/daycare-1.png"
+              src="/grooming-1.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
               height={100}
               width={100}
             />
           </div>
-          <div className="h-auto flex flex-1 w-full">
+          {/* <div className="h-auto flex flex-1 w-full">
             <Image
               alt="Daycare"
-              src="/daycare-2.png"
+              src="/grooming-2.png"
               className="rounded-xl border flex flex-1 border-[#183453]"
               height={100}
               width={100}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

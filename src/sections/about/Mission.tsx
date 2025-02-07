@@ -3,15 +3,18 @@ import { FaCheck } from "react-icons/fa6";
 import Image from "next/image";
 
 interface MissionItemProps {
+  id: number;
   src: string;
   title: string;
   bullets: string[];
+  type: "image" | "video";
 }
 
-const missionData = [
+const missionData: MissionItemProps[] = [
   {
     id: 0,
-    src: "/mission-1.png",
+    src: "/pets-come-first.png",
+    type: "image",
     title: "Pets Come First",
     bullets: [
       "Elevated  pet care",
@@ -21,7 +24,8 @@ const missionData = [
   },
   {
     id: 1,
-    src: "/mission-2.png",
+    src: "/local-video.mp4",
+    type: "video",
     title: "Local Is Better",
     bullets: [
       "Established, long-term relationships",
@@ -31,7 +35,8 @@ const missionData = [
   },
   {
     id: 2,
-    src: "/mission-3.png",
+    src: "/network-of-care.png",
+    type: "image",
     title: "Network of Excellence",
     bullets: [
       "Best practice sharing",
@@ -41,20 +46,32 @@ const missionData = [
   },
 ];
 
-const MissionItem = ({ src, title, bullets }: MissionItemProps) => (
+const MissionItem = ({ src, title, bullets, type }: MissionItemProps) => (
   <div className="flex flex-col items-start">
-    <Image
-      className="rounded-xl border border-[#183453]"
-      src={src}
-      alt={title}
-      height={425}
-      width={500}
-    />
+    {type === "image" ? (
+      <Image
+        className="rounded-xl border border-[#183453] w-full h-[600px] object-cover"
+        src={src}
+        alt={title}
+        height={600}
+        width={500}
+      />
+    ) : (
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="rounded-xl border border-[#183453] w-full h-[600px] object-cover"
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+    )}
     <h3 className="text-2xl font-semibold pt-6 pb-3">{title}</h3>
     <div className="flex flex-col gap-3">
       {bullets.map((bullet) => (
         <div key={bullet} className="flex flex-row items-center gap-4">
-          <div className="p-1 rounded-full bg-[#183453] ">
+          <div className="p-1 rounded-full bg-[#183453]">
             <FaCheck size={14} color="white" />
           </div>
           <p className="text-lg font-medium">{bullet}</p>
@@ -87,7 +104,9 @@ const Mission = () => {
             {missionData.map((item) => (
               <div key={item.id}>
                 <MissionItem
+                  id={item.id}
                   src={item.src}
+                  type={item.type}
                   title={item.title}
                   bullets={item.bullets}
                 />
@@ -95,23 +114,6 @@ const Mission = () => {
             ))}
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-[-100px] rotate-180 left-0 w-full overflow-hidden">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-[200px]"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,40 
-    C380,80 660,-20 1440,30
-    L1440,120 
-    L0,120 Z"
-            fill="white"
-          />
-        </svg>
       </div>
     </section>
   );

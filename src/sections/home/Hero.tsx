@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[#9CD8F6] pb-48 min-h-screen">
+    <section className="relative bg-[#9CD8F6] pb-16 min-h-screen">
       <div className="relative px-[5%] md:px-8 pt-16 md:py-12">
         <div className="items-start mt-[10vh] h-full z-10 justify-between flex flex-col md:max-w-screen-2xl mx-auto">
           <div className="flex flex-row w-full  justify-between">
@@ -35,7 +35,11 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex relative">
-              <div className="h-auto w-auto flex">
+              <motion.div
+                layout
+                whileHover={{ scale: 1.01 }}
+                className="h-auto w-auto duration-300 flex"
+              >
                 <Image
                   src="/hero-badge.png"
                   height={300}
@@ -43,7 +47,7 @@ const Hero = () => {
                   alt="Hero Badge"
                   className=" rounded-full object-contain"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
           <motion.div
@@ -79,21 +83,6 @@ const Hero = () => {
             </motion.div>
           </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-[0px] left-0 w-full overflow-hidden">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-[200px]"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,40 C380,80 660,-20 1440,30 L1440,120 L0,120 Z"
-            fill="white"
-          />
-        </svg>
       </div>
     </section>
   );

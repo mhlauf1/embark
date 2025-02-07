@@ -6,23 +6,14 @@ import { FaStethoscope } from "react-icons/fa";
 
 const Health = () => {
   return (
-    <div className="flex flex-row gap-12  items-start mt-24">
+    <div className="flex flex-row gap-16  items-center mt-24">
       <div className="flex relative flex-1 items-end flex-col gap-2">
         <div className="flex flex-row w-full gap-2">
           <div className="h-auto  flex flex-1 w-full">
             <Image
               alt="Daycare"
-              src="/boarding-1.png"
+              src="/vet-1.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
-              height={100}
-              width={100}
-            />
-          </div>
-          <div className="h-auto flex flex-1 w-full">
-            <Image
-              alt="boarding"
-              src="/boarding-2.png"
-              className="rounded-xl border flex flex-1 border-[#183453]"
               height={100}
               width={100}
             />
@@ -47,7 +38,7 @@ const Health = () => {
           we&apos; re here to support your pet&apos; s health and development at
           every stage of life
         </p>
-        <div className="flex flex-row items-start gap-16">
+        <div className="flex flex-row justify-center gap-8 md:gap-16">
           <div className="flex flex-col gap-2 items-center">
             <CiHeart size={48} />
             <p>Licensed Vets</p>

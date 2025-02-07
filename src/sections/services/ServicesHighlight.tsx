@@ -5,7 +5,7 @@ const serviceItemData = [
   {
     id: 0,
     text: "Quality Boarding for Your Beloved Pets",
-    image: "/services-1.png",
+    image: "/services-3.png",
   },
   {
     id: 1,
@@ -15,20 +15,22 @@ const serviceItemData = [
   {
     id: 2,
     text: "Engaging Daycare for Social and Happy Pets",
-    image: "/services-3.png",
+    image: "/services-1.png",
   },
 ];
 
 const ServiceItem = ({ text, image }: { text: string; image: string }) => (
   <div className="space-y-4">
-    <Image
-      src={image}
-      alt={text}
-      width={490}
-      height={265}
-      className="rounded-lg border border-[#183453]"
-    />
-    <p className="text-2xl font-semibold w-[90%]">{text}</p>
+    <div className="h-[265px] w-full">
+      <Image
+        src={image}
+        alt={text}
+        width={490}
+        height={265}
+        className="rounded-lg border border-[#183453] w-full h-full object-cover"
+      />
+    </div>
+    <p className="text-xl font-semibold">{text}</p>
   </div>
 );
 const ServicesHighlight = () => {

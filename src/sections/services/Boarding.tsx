@@ -6,25 +6,25 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 
 const Boarding = () => {
   return (
-    <div className="flex flex-row gap-12 py-12 items-start">
-      <div className="relative flex-[1] min-h-[300px]">
-        <div className="absolute top-0 pr-12 left-0 w-3/5">
+    <div className="flex flex-row gap-16 py-12 items-center">
+      <div className="flex flex-1 gap-4">
+        <div className="flex-1">
           <Image
             alt="Daycare"
             src="/boarding-1.png"
             className="rounded-xl border border-[#183453] w-full"
-            width={300}
-            height={200}
+            height={400}
+            width={350}
             style={{ height: "auto" }}
           />
         </div>
-        <div className="absolute top-32 pl-12 right-20 w-3/5">
+        <div className="flex-1">
           <Image
             alt="boarding"
             src="/boarding-2.png"
             className="rounded-xl border border-[#183453] w-full"
-            width={300}
-            height={200}
+            height={400}
+            width={350}
             style={{ height: "auto" }}
           />
         </div>
@@ -47,7 +47,7 @@ const Boarding = () => {
           facilities with personalized care, structured night-time routines, and
           plenty of attention
         </p>
-        <div className="flex flex-row items-start gap-24">
+        <div className="flex flex-row justify-center gap-8 md:gap-16">
           <div className="flex flex-col gap-2 items-center">
             <IoPaw size={48} />
             <p>Daily Activities</p>

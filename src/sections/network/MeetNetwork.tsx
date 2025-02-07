@@ -40,58 +40,41 @@ const networkData = [
 ];
 
 interface NetworkItemProps {
-  image: string;
   title: string;
   link: string;
   location: string;
   services: string[];
 }
-
-const NetworkItem = ({
-  image,
-  title,
-  link,
-  location,
-  services,
-}: NetworkItemProps) => (
-  <div className="flex flex-col border rounded-xl border-[#183453]/10">
-    <Image
-      src={image}
-      width={770}
-      height={400}
-      alt={title}
-      className="rounded-t-xl border-b border-[#183453]/10"
-    />
-    <div className="px-6 py-10">
-      <div className="flex flex-row justify-between items-start">
-        <div className="space-y-1">
-          <h3 className="text-3xl font-semibold tracking-tight">{title}</h3>
-          <p>{location}</p>
+const Item = ({ title, link, location, services }: NetworkItemProps) => (
+  <div className="grid grid-cols-[2fr,3fr,1fr] w-full  items-start">
+    <div>
+      <h3 className="text-3xl font-semibold tracking-tight">{title}</h3>
+      <p className="text-lg text-gray-600 mt-1">{location}</p>
+    </div>
+    <div className="flex flex-row flex-wrap gap-2">
+      {services.map((service) => (
+        <div
+          className="bg-[#9CD8F6] border border-[#183453]/20 py-2 px-4 rounded-full"
+          key={service}
+        >
+          <p className="font-medium">{service}</p>
         </div>
-        <Link target="_blank" href={link}>
-          <Button className="font-medium text-lg border border-[#183453]/20  rounded-full py-6 px-8 bg-[#9CD8F6]">
-            View Website
-          </Button>
-        </Link>
-      </div>
-      <div className="flex flex-col gap-3 mt-8">
-        <p className="text-xl font-medium">Services:</p>
-        <div className="flex flex-row gap-1">
-          {services.map((service) => (
-            <div className="bg-[#D5F0FF] py-2 px-4 rounded-full" key={service}>
-              <p className="font-medium">{service}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      ))}
+    </div>
+    <div className="flex justify-end">
+      <Link target="_blank" href={link}>
+        <Button className="font-medium text-lg border border-[#183453]/20 rounded-full py-6 px-8 bg-[#9CD8F6]">
+          View Website
+        </Button>
+      </Link>
     </div>
   </div>
 );
 
 const MeetNetwork = () => {
   return (
-    <section className="bg-white flex flex-col py-48">
-      <div className="flex px-8 flex-col items-center justify-center  max-w-screen-2xl mx-auto">
+    <section className="bg-[#EEF9FF] flex flex-col py-48">
+      <div className="flex px-8 flex-col items-center justify-center w-full max-w-screen-2xl mx-auto">
         <div className="border border-[#183453]/50 bg-[#9CD8F6] rounded-full py-1 flex items-center gap-2 px-3">
           <Image
             src="/badge-paws.png"
@@ -110,11 +93,14 @@ const MeetNetwork = () => {
           Five trusted local brands delivering quality pet care across the
           Midwest
         </p>
-        <div className="grid grid-cols-2 mt-16 gap-x-8 gap-y-12">
+        <div className="w-full  mt-16"></div>
+        <div className="grid grid-cols-1  w-full gap-y-6">
           {networkData.map((item) => (
-            <div key={item.id}>
-              <NetworkItem
-                image={item.image}
+            <div
+              className="w-full py-6   border-[#183453] border-b"
+              key={item.id}
+            >
+              <Item
                 link={item.link}
                 location={item.location}
                 title={item.title}

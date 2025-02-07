@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@heroui/react";
 import StarRating from "@/components/StarRating";
@@ -55,11 +54,7 @@ const locations: Location[] = [
 ];
 
 const LocationItem = ({ location }: { location: Location }) => (
-  <motion.div
-    layout
-    className="bg-white p-6 rounded-2xl border border-[#183453] cursor-pointer transition-all duration-500"
-    whileHover={{ scale: 1.01 }}
-  >
+  <div className="bg-white p-6 rounded-2xl border border-[#183453]">
     <div className="flex justify-between items-start">
       <h3 className="text-2xl font-bold tracking-tight">{location.title}</h3>
     </div>
@@ -69,7 +64,7 @@ const LocationItem = ({ location }: { location: Location }) => (
       <div className="flex mt-4 flex-wrap gap-2">
         {location.tags.map((tag) => (
           <span
-            className="px-3 py-1 border border-[#183453]/20 rounded-full bg-[#D5F0FF] text-lg"
+            className="px-3 py-1 border border-[#183453]/50 rounded-full bg-[#D5F0FF] text-lg"
             key={tag}
           >
             {tag}
@@ -77,7 +72,7 @@ const LocationItem = ({ location }: { location: Location }) => (
         ))}
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
 const Network = () => {
