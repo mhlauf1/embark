@@ -27,7 +27,7 @@ const Hero = () => {
         <h1 className="hero-title mt-8 tracking-tighter capitalize">
           The Embark Network
         </h1>
-        <p className="pt-6 hero-text text-start  w-[74ch]">
+        <p className="pt-6 text-lg md:text-xl text-start w-auto md:w-[74ch]">
           A community of premium pet care facilities operating under one shared
           mission, managed by long-term, local staff with deep connections to
           their communities
@@ -38,7 +38,7 @@ const Hero = () => {
               className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent z-[1] rounded-2xl pointer-events-none"
               style={{ height: "40%" }}
             ></div>
-            <p className="text-white absolute top-[58px] left-[42px] z-10 text-start w-[38ch] text-xl  font-semibold">
+            <p className="text-white absolute top-[58px] left-[42px] z-10 text-start w-auto md:w-[38ch] text-xl  font-semibold">
               Embark delivers a comprehensive suite of pet services focused on
               quality and reliability.
             </p>

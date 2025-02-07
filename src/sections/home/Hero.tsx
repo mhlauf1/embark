@@ -18,7 +18,7 @@ const Hero = () => {
                 </span>{" "}
                 like family
               </h1>
-              <div className="space-x-2 flex flex-row justify-center md:justify-start mt-3 md:mt-6">
+              <div className="space-x-2 flex flex-row justify-center md:justify-start mt-2 md:mt-6">
                 <Link href="/services">
                   <Button className="font-medium text-md md:text-xl border border-[#183453]/50 rounded-full py-7 px-8 md:py-8 md:px-10 bg-white">
                     Our Services
@@ -30,7 +30,7 @@ const Hero = () => {
                   </Button>
                 </Link>
               </div>
-              <p className="pt-2 md:pt-4 text-start  hero-text font-semibold">
+              <p className="pt-2 md:pt-4 text-start text-lg md:text-xl font-semibold">
                 We unite local pet care brands under one standard of excellence
               </p>
             </div>

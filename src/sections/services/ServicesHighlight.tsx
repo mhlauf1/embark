@@ -42,7 +42,7 @@ const ServicesHighlight = () => {
           <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize w-auto md:w-[20ch]">
             Professional Pet Services Tailored for You
           </h2>
-          <p className="pt-2 md:pt-4 md:px-0 text-start hero-text font-semibold">
+          <p className="pt-2 md:pt-4 md:px-0 text-start text-lg md:text-xl font-semibold">
             At Embark Pet Services, we understand that your pet deserves the
             best. Our extensive range of services ensures that every aspect of
             your pet&apos;s care is covered, from grooming to veterinary needs.

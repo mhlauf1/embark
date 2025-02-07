@@ -29,7 +29,7 @@ const Services = () => {
             <p className="font-semibold capitalize">All Your Pet Care Needs</p>
           </div>
 
-          <h2 className="text-4xl w-[16ch]  md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight capitalize">
+          <h2 className="text-4xl w-auto md:w-[16ch]  md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight capitalize">
             Complete pet care Across one Network
           </h2>
 

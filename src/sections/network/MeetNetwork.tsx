@@ -89,7 +89,7 @@ const MeetNetwork = () => {
         <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
           Meet our network
         </h2>
-        <p className="pt-8 text-lg text-center w-[74ch]">
+        <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
           Five trusted local brands delivering quality pet care across the
           Midwest
         </p>

@@ -11,7 +11,7 @@ const WhatIsEmbark = () => {
       <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
         What is the embark network?
       </h2>
-      <p className="pt-8 text-2xl font-medium text-center leading-relaxed w-[68ch]">
+      <p className="pt-8 text-2xl font-medium text-center leading-relaxed w-auto md:w-[68ch]">
         The Embark Network is a community of premium pet care facilities
         operating under one connected vision. Our locations are often
         family-owned and operated, fostering deep connections within their

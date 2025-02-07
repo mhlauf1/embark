@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="hero-title mt-8 tracking-tighter  capitalize">
             Every need for your beloved pet
           </h1>
-          <p className="pt-6 hero-text text-start text-medium w-[54ch]">
+          <p className="pt-6 text-lg md:text-xl text-start w-auto md:w-[54ch]">
             Focused on quality and reliability, Embark delivers a comprehensive
             suite of services across its network
           </p>
