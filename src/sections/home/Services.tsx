@@ -7,7 +7,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const Services = () => {
   const ServiceItem = ({ text }: { text: string }) => (
-    <div className="flex flex-row items-center border border-[#183453]/20 rounded-full px-6 md:px-4 py-4 md:py-3 w-full md:w-fit bg-[#D5F0FF] gap-5 md:gap-3">
+    <div className="flex flex-row items-center border border-[#183453]/20 rounded-full px-4 py-3 w-full md:w-fit bg-[#D5F0FF] gap-3">
       <div className="p-1 mt-1 rounded-full bg-[#183453]">
         <FaCheck size={12} color="white" />
       </div>
@@ -18,7 +18,7 @@ const Services = () => {
     <section className="py-24 m:py-36 flex flex-col md:flex-row gap-16 justify-between items-center  px-4 sm:px-8 md:px-24 relative">
       <div className="flex h-full w-full flex-col md:flex-row">
         {/* Content */}
-        <div className="relative z-10 flex items-start flex-1 flex-col gap-8">
+        <div className="relative z-10 flex items-start flex-1 flex-col gap-5 md:gap-8">
           <div className="border border-[#183453]/50 rounded-full bg-[#EEF9FF] py-1 flex items-center gap-2 px-3 w-fit">
             <Image
               src="/badge-paws.png"

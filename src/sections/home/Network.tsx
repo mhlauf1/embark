@@ -25,15 +25,7 @@ const locations: Location[] = [
     rating: 4.7,
     reviews: 210,
   },
-  {
-    id: 1,
-    title: "Barks & Rec Hastings",
-    location: "Hastings, MN",
-    tags: ["Daycare", "Boarding"],
-    mapPosition: { lat: 44.77103052242032, lng: -92.86014533006993 },
-    rating: 4.8,
-    reviews: 16,
-  },
+
   {
     id: 2,
     title: "Wags Stay N' Play",
@@ -45,6 +37,15 @@ const locations: Location[] = [
   },
   {
     id: 3,
+    title: "Barks & Rec Hastings",
+    location: "Hastings, MN",
+    tags: ["Daycare", "Boarding"],
+    mapPosition: { lat: 44.77103052242032, lng: -92.86014533006993 },
+    rating: 4.8,
+    reviews: 16,
+  },
+  {
+    id: 4,
     title: "Boxers Bed & Biscuits",
     location: "Belpre, OH",
     tags: ["Daycare", "Boarding", "Grooming", "Vet Care", "Training"],
@@ -83,7 +84,7 @@ const Network = () => {
   return (
     <section className="py-24 md:py-36 bg-[#9CD8F6]">
       <div className="flex px-4 sm:px-8 md:px-24  flex-col">
-        <div className="flex flex-col gap-8 items-start">
+        <div className="flex flex-col gap-5 md:gap-8 items-start">
           <div className="border border-[#183453]/50 bg-[#EEF9FF] rounded-full py-1 flex items-center gap-2 px-3">
             <Image
               src="/badge-paws.png"
@@ -97,7 +98,7 @@ const Network = () => {
             <h2 className="text-4xl md:text-5xl w-full md:w-[16ch] lg:text-6xl xl:text-7xl font-bold tracking-tight capitalize">
               Quality Care Built On Trust and Expertise
             </h2>
-            <Link href="/network" className="mt-12">
+            <Link href="/network" className="mt-8 md:mt-12">
               <Button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
                 Explore Network
               </Button>

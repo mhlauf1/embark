@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className="py-28 md:py-40 items-start px-4 sm:px-8 md:px-24 relative justify-between flex md:flex-row flex-col">
       <div className="flex flex-col items-start flex-1">
-        <div className="flex flex-col gap-8 items-start">
+        <div className="flex flex-col gap-5 md:gap-8 items-start">
           <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">
             <Image
               src="/badge-paws.png"

@@ -22,7 +22,7 @@ const WhyUs = () => {
       <div className="px-4 sm:px-8 md:px-24">
         <div className="justify-between flex md:flex-row  flex-col">
           <div className="flex items-start gap-6 md:items-end flex-col md:flex-row justify-between w-full">
-            <div className="flex flex-col gap-8 items-start">
+            <div className="flex flex-col gap-5 md:gap-8 items-start">
               <div className="border bg-white border-[#183453]/50 rounded-full py-1 flex flex-row items-center gap-2 px-3">
                 <Image
                   src="/badge-paws.png"
