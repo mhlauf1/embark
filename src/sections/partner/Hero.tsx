@@ -9,9 +9,9 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           <div className="border border-[#183453]/50 bg-white rounded-full py-1 flex items-center gap-2 px-3">
             <Image
-              src="/badge-paws.png"
-              height={18}
-              width={24}
+              src="/paw-small.svg"
+              height={16}
+              width={16}
               alt="Paw Prints"
             />
             <p className="font-semibold capitalize">Join the network</p>
@@ -50,7 +50,7 @@ const Hero = () => {
               />
             </div>
             <Image
-              className="absolute hidden md:block h-[130px] w-[130px] md:h-[100px] md:w-[170px] top-[0px] md:top-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
+              className="absolute hidden md:block :h-[130px] w-[170px] top-[0px] md:top-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
               src="/white-badge.svg"
               alt="Embark sticker"
               height={170}

@@ -11,7 +11,7 @@ const Health = () => {
           <div className="h-auto  flex flex-1 w-full">
             <Image
               alt="Daycare"
-              src="/vet-1.png"
+              src="/health-wellness.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
               height={100}
               width={100}
