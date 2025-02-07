@@ -47,7 +47,7 @@ const missionData: MissionItemProps[] = [
 ];
 
 const MissionItem = ({ src, title, bullets, type }: MissionItemProps) => (
-  <div className="flex flex-col items-start">
+  <div className="flex flex-col w-full items-start">
     {type === "image" ? (
       <Image
         className="rounded-xl border border-[#183453] w-full h-[600px] object-cover"
@@ -83,36 +83,34 @@ const MissionItem = ({ src, title, bullets, type }: MissionItemProps) => (
 
 const Mission = () => {
   return (
-    <section className="py-12 relative md:py-16">
-      <div className=" px-8 mx-16 py-12 md:py-32 bg-white   rounded-xl">
-        <div className="flex max-w-screen-2xl mx-auto items-center flex-col">
-          <div className="border border-[#183453]/50 rounded-full bg-white py-1 flex flex-row items-center gap-2 px-3">
-            <Image
-              src="/badge-paws.png"
-              height={18}
-              width={24}
-              alt="Paw Prints"
-            />
-            <p className="font-semibold text-lg md:text-xl capitalize">
-              Elevating pet care
-            </p>
-          </div>
-          <h2 className="text-4xl mt-8 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
-            Our Mission
-          </h2>
-          <div className="grid mt-20 grid-cols-1 md:grid-cols-3 gap-16 px-16 md:gap-8">
-            {missionData.map((item) => (
-              <div key={item.id}>
-                <MissionItem
-                  id={item.id}
-                  src={item.src}
-                  type={item.type}
-                  title={item.title}
-                  bullets={item.bullets}
-                />
-              </div>
-            ))}
-          </div>
+    <section className=" py-24 relative md:py-36 border w-full">
+      <div className="flex  px-4 sm:px-8 md:px-24 items-center flex-col">
+        <div className="border border-[#183453]/50 rounded-full bg-white py-1 flex flex-row items-center gap-2 px-3">
+          <Image
+            src="/badge-paws.png"
+            height={18}
+            width={24}
+            alt="Paw Prints"
+          />
+          <p className="font-semibold text-lg md:text-xl capitalize">
+            Elevating pet care
+          </p>
+        </div>
+        <h2 className="text-4xl mt-8 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize ">
+          Our Mission
+        </h2>
+        <div className="grid mt-12 md:mt-20 w-full grid-cols-1 md:grid-cols-3 gap-16  md:gap-8">
+          {missionData.map((item) => (
+            <div key={item.id}>
+              <MissionItem
+                id={item.id}
+                src={item.src}
+                type={item.type}
+                title={item.title}
+                bullets={item.bullets}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

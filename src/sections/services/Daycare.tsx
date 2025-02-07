@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { MdSupervisedUserCircle } from "react-icons/md";
 import { FaPeopleGroup } from "react-icons/fa6";
@@ -17,25 +16,25 @@ const Daycare = () => {
           />
           <p className="font-semibold text-xl capitalize">Daycare</p>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">
           Where Every Day is an adventure
         </h2>
-        <p className="my-6 md:my-8 md:w-[85%] text-xl font-medium">
+        <p className="my-5 md:my-8 md:w-[85%] text-lg md:text-xl font-medium">
           Keep your pet active and engaged with supervised play sessions
           throughout the day. Our professional staff ensures safe socialization
           while maintaining the perfect balance of activity and rest
         </p>
-        <div className="flex flex-row justify-center gap-8 md:gap-16">
+        <div className="flex flex-row justify-center items-end gap-8 md:gap-16">
           <div className="flex flex-col gap-2 items-center">
             <MdSupervisedUserCircle size={48} />
             <p>Supervised Play</p>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <FaPeopleGroup size={48} />
+            <FaPeopleGroup size={46} />
             <p>Social Activities</p>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <FaRegLightbulb size={48} />
+            <FaRegLightbulb size={42} />
             <p>Enrichment</p>
           </div>
         </div>
@@ -47,7 +46,7 @@ const Daycare = () => {
             alt="Large Bone"
             height={90}
             width={90}
-            className="absolute top-[-40] left-[-40]"
+            className="absolute hidden md:block top-[-40] left-[-40]"
           />
           <div className="flex flex-1">
             <Image

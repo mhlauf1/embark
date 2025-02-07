@@ -46,22 +46,24 @@ interface NetworkItemProps {
   services: string[];
 }
 const Item = ({ title, link, location, services }: NetworkItemProps) => (
-  <div className="grid grid-cols-[2fr,3fr,1fr] w-full  items-start">
+  <div className="grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-[2fr,3fr,1fr] w-full  items-start">
     <div>
-      <h3 className="text-3xl font-semibold tracking-tight">{title}</h3>
-      <p className="text-lg text-gray-600 mt-1">{location}</p>
+      <h3 className="text-2xl md:text-3xl font-semibold tracking-tight">
+        {title}
+      </h3>
+      <p className="text-lg font-medium text-gray-600 mt-1">{location}</p>
     </div>
     <div className="flex flex-row flex-wrap gap-2">
       {services.map((service) => (
         <div
-          className="bg-[#9CD8F6] border border-[#183453]/20 py-2 px-4 rounded-full"
+          className="bg-[#D5F0FF] border border-[#183453]/20 py-2 px-4 rounded-full"
           key={service}
         >
           <p className="font-medium">{service}</p>
         </div>
       ))}
     </div>
-    <div className="flex justify-end">
+    <div className="flex mb-4 md:mb-0 mt-4 md:mt-0 md:justify-end">
       <Link target="_blank" href={link}>
         <Button className="font-medium text-lg border border-[#183453]/20 rounded-full py-6 px-8 bg-[#9CD8F6]">
           View Website
@@ -73,9 +75,9 @@ const Item = ({ title, link, location, services }: NetworkItemProps) => (
 
 const MeetNetwork = () => {
   return (
-    <section className="bg-[#EEF9FF] flex flex-col py-48">
-      <div className="flex px-8 flex-col items-center justify-center w-full max-w-screen-2xl mx-auto">
-        <div className="border border-[#183453]/50 bg-[#9CD8F6] rounded-full py-1 flex items-center gap-2 px-3">
+    <section className="bg-[#EEF9FF] flex flex-col py-24 md:py-36">
+      <div className="flex flex-col items-center justify-center w-full px-4 sm:px-8 md:px-24">
+        <div className="border border-[#183453]/50 bg-[#D5F0FF] rounded-full py-1 flex items-center gap-2 px-3">
           <Image
             src="/badge-paws.png"
             height={18}
@@ -86,15 +88,14 @@ const MeetNetwork = () => {
             Midwest&apos;s Trusted Pet Care
           </p>
         </div>
-        <h2 className="mt-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
+        <h2 className="mt-5 md:mt-8 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
           Meet our network
         </h2>
         <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
           Five trusted local brands delivering quality pet care across the
           Midwest
         </p>
-        <div className="w-full  mt-16"></div>
-        <div className="grid grid-cols-1  w-full gap-y-6">
+        <div className="grid grid-cols-1 mt-16 w-full gap-y-6">
           {networkData.map((item) => (
             <div
               className="w-full py-6   border-[#183453] border-b"

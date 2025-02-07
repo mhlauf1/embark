@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { RiToothLine } from "react-icons/ri";
 import { RiScissors2Line } from "react-icons/ri";
@@ -6,7 +5,7 @@ import { FaBath } from "react-icons/fa";
 
 const Grooming = () => {
   return (
-    <div className="flex flex-row mt-24 gap-16 items-center">
+    <div className="flex flex-col md:flex-row py-12 gap-16 items-center">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
           <Image
@@ -17,10 +16,10 @@ const Grooming = () => {
           />
           <p className="font-semibold text-xl capitalize">Grooming</p>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">
           A Day At The Spa… Or A Much-Needed Bath
         </h2>
-        <p className="my-6 md:my-8 w-[85%] text-xl font-medium">
+        <p className="my-5 md:my-8  w-full md:w-[85%] text-xl font-medium">
           Our breed-specific grooming services range from ongoing hygiene
           maintenance to full spa blow-outs. Each grooming service combines
           trained expertise with premium products in our safe, well-equipped
@@ -45,9 +44,9 @@ const Grooming = () => {
           </div>
         </div>
       </div>
-      <div className="flex relative flex-1 items-end flex-col gap-2">
+      <div className="flex relative flex-1 w-full md:items-end flex-col gap-2">
         <div className="flex flex-col w-full gap-2">
-          <div className="h-auto  flex flex-1 w-full">
+          <div className="h-auto flex flex-1 w-full">
             <Image
               alt="Daycare"
               src="/grooming-1.png"
@@ -56,15 +55,6 @@ const Grooming = () => {
               width={100}
             />
           </div>
-          {/* <div className="h-auto flex flex-1 w-full">
-            <Image
-              alt="Daycare"
-              src="/grooming-2.png"
-              className="rounded-xl border flex flex-1 border-[#183453]"
-              height={100}
-              width={100}
-            />
-          </div> */}
         </div>
       </div>
     </div>

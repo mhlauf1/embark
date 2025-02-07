@@ -6,7 +6,7 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 
 const Boarding = () => {
   return (
-    <div className="flex flex-row gap-16 py-12 items-center">
+    <div className="flex flex-col-reverse md:flex-row gap-16 py-12 items-center">
       <div className="flex flex-1 gap-4">
         <div className="flex-1">
           <Image
@@ -39,15 +39,15 @@ const Boarding = () => {
           />
           <p className="font-semibold text-xl capitalize">Boarding</p>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">
           Safe, Secure Stays When You&apos;re Away
         </h2>
-        <p className="my-6 md:my-8 w-[85%] text-xl font-medium">
+        <p className="my-5 md:my-8 md:w-[85%] text-lg md:text-xl font-medium">
           Give your pet a comfortable home away from home in our modern boarding
           facilities with personalized care, structured night-time routines, and
           plenty of attention
         </p>
-        <div className="flex flex-row justify-center gap-8 md:gap-16">
+        <div className="flex flex-row items-end justify-center gap-8 md:gap-16">
           <div className="flex flex-col gap-2 items-center">
             <IoPaw size={48} />
             <p>Daily Activities</p>

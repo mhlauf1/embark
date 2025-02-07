@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { GiWhistle } from "react-icons/gi";
 import { CiHeart } from "react-icons/ci";
@@ -6,8 +5,8 @@ import { FaStethoscope } from "react-icons/fa";
 
 const Health = () => {
   return (
-    <div className="flex flex-row gap-16  items-center mt-24">
-      <div className="flex relative flex-1 items-end flex-col gap-2">
+    <div className="flex flex-col-reverse md:flex-row gap-16  items-center py-12">
+      <div className="flex relative flex-1 w-full md:items-end flex-col gap-2">
         <div className="flex flex-row w-full gap-2">
           <div className="h-auto  flex flex-1 w-full">
             <Image
@@ -30,10 +29,10 @@ const Health = () => {
           />
           <p className="font-semibold text-xl capitalize">Health & Wellness</p>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-8 capitalize ">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">
           Comprehensive veterinary and training services
         </h2>
-        <p className="my-6 md:my-8 w-[85%] text-xl font-medium">
+        <p className="my-5 md:my-8 w-full md:w-[85%] text-lg md:text-xl font-medium">
           From routine check-ups & specialized care to breed-specific training,
           we&apos; re here to support your pet&apos; s health and development at
           every stage of life

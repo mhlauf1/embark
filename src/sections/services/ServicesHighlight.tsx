@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const serviceItemData = [
@@ -20,7 +19,7 @@ const serviceItemData = [
 ];
 
 const ServiceItem = ({ text, image }: { text: string; image: string }) => (
-  <div className="space-y-4">
+  <div className="space-y-2 md:space-y-4">
     <div className="h-[265px] w-full">
       <Image
         src={image}
@@ -35,8 +34,8 @@ const ServiceItem = ({ text, image }: { text: string; image: string }) => (
 );
 const ServicesHighlight = () => {
   return (
-    <section className="py-24  md:py-36 ">
-      <div className="max-w-screen-2xl mx-auto px-8 flex flex-col">
+    <section className="py-24 md:py-36 ">
+      <div className="px-4 sm:px-8 md:px-24 flex flex-col">
         <div className="flex flex-col gap-4 items-start">
           <Image src="/ball.png" height={60} width={60} alt="Paw Prints" />
           <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize w-auto md:w-[20ch]">
@@ -50,7 +49,7 @@ const ServicesHighlight = () => {
             hands.
           </p>
         </div>
-        <div className="grid mt-8 grid-cols-1 md:grid-cols-3 gap-16 md:gap-6">
+        <div className="grid mt-10 grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
           {serviceItemData.map((item) => (
             <div key={item.id}>
               <ServiceItem text={item.text} image={item.image} />

@@ -60,12 +60,12 @@ const VisionItem = ({ Icon, title, className = "" }: VisionItemProps) => (
 
 const Vision = () => {
   return (
-    <section className="bg-[#9CD8F6] py-36 md:py-48">
-      <div className="px-8 max-w-screen-2xl mx-auto">
+    <section className="bg-[#9CD8F6] py-24 md:py-36">
+      <div className="px-4 sm:px-8 md:px-24">
         <div className="flex items-start flex-col">
           <div className="flex flex-col md:flex-row w-full justify-between">
             <div className="flex flex-1 items-start  flex-col">
-              <div className="border border-[#183453]/50 rounded-full bg-[#EFF9FF] py-1 flex flex-row items-center gap-2 px-3">
+              <div className="border border-[#183453]/50 rounded-full bg-white py-1 flex flex-row items-center gap-2 px-3">
                 <Image
                   src="/badge-paws.png"
                   height={18}
@@ -76,12 +76,12 @@ const Vision = () => {
                   The Embark Way
                 </p>
               </div>
-              <h2 className="text-4xl mt-8 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start md:text-start capitalize">
+              <h2 className="text-4xl mt-5 md:mt-8 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start md:text-start capitalize">
                 Our Vision
               </h2>
               <p
                 style={{ lineHeight: "150%" }}
-                className=" mb-4 w-auto font-medium mt-8 md:w-[56ch] text-lg md:text-xl text-start"
+                className="mb-0 md:mb-4 w-auto font-medium mt-5 md:mt-8 md:w-[80%] text-lg md:text-xl text-start"
               >
                 We&apos;re building a network that elevates pet care standards
                 while preserving the local relationships our communities trust.
@@ -90,7 +90,7 @@ const Vision = () => {
                 network.
               </p>
             </div>
-            <div className="flex relative">
+            <div className="hidden md:flex relative">
               <motion.div
                 layout
                 whileHover={{ scale: 1.01 }}
