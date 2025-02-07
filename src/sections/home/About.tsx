@@ -7,7 +7,7 @@ import { BulletItem } from "@/components/BulletItem";
 
 const About = () => {
   return (
-    <section className="py-28 md:py-40 px-8 items-start  justify-between flex md:flex-row flex-col max-w-screen-2xl mx-auto">
+    <section className="py-28 md:py-40 items-start px-4 sm:px-8 md:px-24 relative justify-between flex md:flex-row flex-col">
       <div className="flex flex-col items-start flex-1">
         <div className="flex flex-col gap-8 items-start">
           <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">
@@ -25,12 +25,12 @@ const About = () => {
             Premier Pet Care
           </h2>
         </div>
-        <p className="text-lg md:text-xl mt-4 md:mt-6 w-[95%] md:w-[90%]">
+        <p className="text-lg md:text-xl mt-4 md:mt-6 w-full md:w-[90%]">
           A network of trusted, local pet care providers delivering
           comprehensive services with a focus on quality, reliability, and
           safety
         </p>
-        <div className="grid grid-cols-1 w-[100%] gap-y-4 mt-4 md:mt-6 mb-8 md:mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[100%] gap-y-4 mt-6 md:mt-8 mb-8 md:mb-12">
           <BulletItem text="Professional Expertise" />
           <BulletItem text="Local Trusted Teams" />
           <BulletItem text="Comprehensive Service Offerings" />

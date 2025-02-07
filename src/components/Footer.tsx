@@ -15,7 +15,7 @@ const Footer = () => {
         className="absolute top-[-45px] rotate-45 left-[40%] md:left-[47%]"
       />
       {/* <div className="bg-[#183453] h-[300px] w-full"></div> */}
-      <div className=" px-8 max-w-screen-2xl  w-full mx-auto">
+      <div className=" px-4 sm:px-8 md:px-24  w-full ">
         <div className="flex flex-col flex-grow items-center justify-center">
           <div className="flex mt-24 w-full flex-col md:flex-row gap-4">
             <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-10 md:py-16 px-8 md:px-12 flex-col gap-4">
@@ -53,15 +53,15 @@ const Footer = () => {
             <div></div>
           </div>
         </div>
-        <div className="flex flex-col text-[#183453]/60 text-sm mt-16 gap-8 items-center">
-          <ul className="flex gap-8">
+        <div className="flex flex-col text-[#183453]/60 text-sm mt-16 gap-8 items-start md:items-center">
+          <ul className="flex gap-6 md:gap-8">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/services">Services</Link>
             <Link href="/network">Network</Link>
             <Link href="/partner-with-us">Partner With Us</Link>
           </ul>
-          <ul className="flex gap-8">
+          <ul className="flex gap-6 md:gap-8">
             <Link href="https://riogrooming.com/" target="_blank">
               Rio Grooming & Salon
             </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
               Boxers Bed & Biscuits
             </Link>
           </ul>
-          <div className="flex items-center flex-col">
+          <div className="flex items-start md:items-center flex-col">
             <p>© Embark Pet Services, LLC 2025. All rights reserved.</p>
             <p>
               Designed and developed by{" "}
@@ -89,7 +89,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 right-0">
+        <div className="absolute md:block hidden bottom-0 right-0">
           <Image
             src="/footer-paw.png"
             height={282}
