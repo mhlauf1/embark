@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Button } from "@heroui/react";
 import Link from "next/link";
 
 const Footer = () => {
@@ -29,9 +28,9 @@ const Footer = () => {
               <p className="mb-3 md:mb-6 font-medium text-lg md:text-2xl">
                 Join our network of pet care excellence
               </p>
-              <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+              <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                 Learn More
-              </Button>
+              </button>
             </div>
             <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-2 md:gap-4">
               <div className="w-[64px] md:w-[72px] relative h-[64px] md:h-[72px]">
@@ -45,9 +44,9 @@ const Footer = () => {
                 Discover quality pet care in your community
               </p>
               <Link href="/">
-                <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+                <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                   View Locations
-                </Button>
+                </button>
               </Link>
             </div>
             <div></div>

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Button } from "@heroui/react";
 import { FaCheck } from "react-icons/fa6";
 
 const WhyUsBulletItem = ({ text, title }: { text: string; title: string }) => (
@@ -39,9 +38,9 @@ const WhyUs = () => {
               </h2>
             </div>
             <div className="flex mt-4 md:mt-0 justify-end flex-1">
-              <Button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+              <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                 Hear from our customers
-              </Button>
+              </button>
             </div>
           </div>
         </div>

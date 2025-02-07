@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Button } from "@heroui/react";
 
 const Hero = () => {
   return (
@@ -32,12 +31,9 @@ const Hero = () => {
               type="email"
               className="w-[400px] py-3 px-3 rounded-md"
             />
-            <Button
-              className="font-medium  border border-[#183453]/20 tracking-wide rounded-md py-3 px-6 bg-[#9CD8F6]"
-              size="lg"
-            >
+            <button className="font-medium  border border-[#183453]/20 tracking-wide rounded-md py-4 px-8 bg-[#9CD8F6]">
               Submit
-            </Button>
+            </button>
           </div>
         </div>
         <div className="relative mt-12 w-full">

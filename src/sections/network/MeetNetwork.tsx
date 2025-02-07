@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Button } from "@heroui/react";
 import Link from "next/link";
 
 const networkData = [
@@ -65,9 +64,9 @@ const Item = ({ title, link, location, services }: NetworkItemProps) => (
     </div>
     <div className="flex mb-4 md:mb-0 mt-4 md:mt-0 md:justify-end">
       <Link target="_blank" href={link}>
-        <Button className="font-medium text-lg border border-[#183453]/20 rounded-full py-6 px-8 bg-[#9CD8F6]">
+        <button className="font-medium text-lg border border-[#183453]/20 rounded-full py-4 px-8 bg-[#9CD8F6]">
           View Website
-        </Button>
+        </button>
       </Link>
     </div>
   </div>

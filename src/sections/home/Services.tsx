@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Button } from "@heroui/react";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 
@@ -61,9 +60,9 @@ const Services = () => {
           </div>
           <div className="w-full flex md:justify-start justify-center">
             <Link href="/services" className="mt-6">
-              <Button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+              <button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                 Learn more
-              </Button>
+              </button>
             </Link>
           </div>
         </div>

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@heroui/react";
 import StarRating from "@/components/StarRating";
 import { FaCheck } from "react-icons/fa6";
 
@@ -99,9 +98,9 @@ const Network = () => {
               Quality Care Built On Trust and Expertise
             </h2>
             <Link href="/network" className="mt-8 md:mt-12">
-              <Button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+              <button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                 Explore Network
-              </Button>
+              </button>
             </Link>
           </div>
         </div>

@@ -6,7 +6,6 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@heroui/react";
 import Image from "next/image";
 import { IoMenuOutline } from "react-icons/io5";
@@ -53,12 +52,9 @@ const Nav = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden sm:flex">
-            <Button
-              className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453]"
-              size="lg"
-            >
+            <button className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453]">
               Contact
-            </Button>
+            </button>
           </NavbarItem>
           <button
             className="sm:hidden"
