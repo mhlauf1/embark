@@ -23,7 +23,7 @@ const Hero = () => {
               Building Better Pet Care Together
             </h1>
 
-            <p className="text-base sm:text-lg md:text-xl max-w-[42ch] font-semibold">
+            <p className="text-base sm:text-lg md:text-xl w-auto md:max-w-[42ch] font-semibold">
               We&apos;re uniting local pet care brands to create exceptional
               experiences for pets and their families
             </p>
@@ -47,7 +47,7 @@ const Hero = () => {
               className="w-full h-auto md:w-[625px] mx-auto md:mx-0"
             />
           </div>
-          <div className="flex-1 w-full md:hidden flex  mt-8">
+          <div className="flex-1 w-full md:hidden flex">
             <Image
               src="/mobile-about-hero.png"
               height={575}

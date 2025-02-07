@@ -24,18 +24,26 @@ const Daycare = () => {
           throughout the day. Our professional staff ensures safe socialization
           while maintaining the perfect balance of activity and rest
         </p>
-        <div className="flex flex-row justify-center items-end gap-8 md:gap-16">
+        <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 max-w-xl  w-full">
           <div className="flex flex-col gap-2 items-center">
-            <MdSupervisedUserCircle size={48} />
-            <p>Supervised Play</p>
+            <MdSupervisedUserCircle className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Supervised Play
+            </p>
           </div>
+
           <div className="flex flex-col gap-2 items-center">
-            <FaPeopleGroup size={46} />
-            <p>Social Activities</p>
+            <FaPeopleGroup className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Social Activities
+            </p>
           </div>
+
           <div className="flex flex-col gap-2 items-center">
-            <FaRegLightbulb size={42} />
-            <p>Enrichment</p>
+            <FaRegLightbulb className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Enrichment
+            </p>
           </div>
         </div>
       </div>

@@ -47,18 +47,24 @@ const Boarding = () => {
           facilities with personalized care, structured night-time routines, and
           plenty of attention
         </p>
-        <div className="flex flex-row items-end justify-center gap-8 md:gap-16">
+        <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 max-w-2xl w-full">
           <div className="flex flex-col gap-2 items-center">
-            <IoPaw size={48} />
-            <p>Daily Activities</p>
+            <IoPaw className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Daily Activities
+            </p>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <FaStar size={48} />
-            <p>Premium Comfort</p>
+            <FaStar className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Premium Comfort
+            </p>
           </div>
           <div className="flex flex-col gap-2 items-center">
-            <AiFillSafetyCertificate size={48} />
-            <p>Safety</p>
+            <AiFillSafetyCertificate className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Safety
+            </p>
           </div>
         </div>
       </div>

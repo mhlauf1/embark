@@ -25,22 +25,36 @@ const Grooming = () => {
           trained expertise with premium products in our safe, well-equipped
           facilities
         </p>
-        <div className="flex flex-row justify-center gap-8 md:gap-16">
-          <div className="flex flex-col gap-2 items-center text-center">
-            <FaBath size={48} />
-            <p className="whitespace-nowrap">Baths</p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 md:gap-16 max-w-2xl w-full">
+          <div className="flex flex-col gap-2 items-center">
+            <FaBath className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Baths
+            </p>
           </div>
-          <div className="flex flex-col  gap-2 items-center text-center">
-            <Image src="/dog-ear.png" height={48} width={48} alt="Grooming" />
-            <p className="whitespace-nowrap">Ears</p>
+          <div className="flex flex-col gap-2 items-center">
+            <Image
+              src="/dog-ear.png"
+              height={48}
+              width={48}
+              alt="Grooming"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
+            />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Ears
+            </p>
           </div>
-          <div className="flex flex-col  gap-2 items-center text-center">
-            <RiToothLine size={48} />
-            <p className="whitespace-nowrap">Teeth & Nails</p>
+          <div className="flex flex-col gap-2 items-center">
+            <RiToothLine className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Teeth & Nails
+            </p>
           </div>
-          <div className="flex flex-col  gap-2 items-center text-center">
-            <RiScissors2Line size={48} />
-            <p className="whitespace-nowrap">Cuts & Spa Days</p>
+          <div className="flex flex-col gap-2 items-center">
+            <RiScissors2Line className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
+              Cuts & Spa Days
+            </p>
           </div>
         </div>
       </div>
