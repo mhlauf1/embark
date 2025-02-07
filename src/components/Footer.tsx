@@ -28,9 +28,11 @@ const Footer = () => {
               <p className="mb-3 md:mb-6 font-medium text-lg md:text-2xl">
                 Join our network of pet care excellence
               </p>
-              <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
-                Learn More
-              </button>
+              <Link href="/partner-with-us">
+                <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
+                  Learn More
+                </button>
+              </Link>
             </div>
             <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-2 md:gap-4">
               <div className="w-[64px] md:w-[72px] relative h-[64px] md:h-[72px]">
@@ -43,7 +45,7 @@ const Footer = () => {
               <p className="mb-3 md:mb-6 font-medium text-lg md:text-2xl">
                 Discover quality pet care in your community
               </p>
-              <Link href="/">
+              <Link href="/network">
                 <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                   View Locations
                 </button>
