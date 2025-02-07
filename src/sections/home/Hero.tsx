@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative bg-[#9CD8F6] pb-20 md:pb-16">
+    <section className="relative bg-[#9CD8F6] pb-12 md:pb-16">
       <div className="relative px-4 sm:px-8 md:px-24 pt-4 md:pt-16 md:py-12">
         <div className="items-start mt-[7vh] md:mt-[10vh] h-full z-10 justify-between flex flex-col">
           <div className="flex flex-col md:flex-row w-full  justify-between">
@@ -63,7 +63,7 @@ const Hero = () => {
             />
           </motion.div> */}
 
-          <div className="mt-12  w-full ">
+          <div className="mt-6 md:mt-12  w-full ">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
