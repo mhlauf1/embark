@@ -20,14 +20,14 @@ const Hero = () => {
               </h1>
               <div className="space-x-2 flex flex-row justify-center md:justify-start mt-2 md:mt-6">
                 <Link href="/services">
-                  <Button className="font-medium text-md md:text-xl border border-[#183453]/50 rounded-full py-7 px-8 md:py-8 md:px-10 bg-white">
+                  <button className="font-medium text-md md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-white">
                     Our Services
-                  </Button>
+                  </button>
                 </Link>
                 <Link href="/network">
-                  <Button className="font-medium text-md md:text-xl border border-[#183453]/50 rounded-full py-7 px-8 md:py-8 md:px-10 bg-[#183453] text-white">
+                  <button className="font-medium text-md md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                     Our Locations
-                  </Button>
+                  </button>
                 </Link>
               </div>
               <p className="pt-2 md:pt-4 text-start text-lg md:text-xl font-semibold">
