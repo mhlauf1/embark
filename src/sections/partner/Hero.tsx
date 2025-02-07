@@ -21,7 +21,7 @@ const Hero = () => {
             We want to partner with you
           </h1>
 
-          <p className="pt-5 md:pt-8 text-lg md:text-xl max-w-[72ch] text-center font-semibold">
+          <p className="pt-5 md:pt-8 text-lg md:text-xl w-auto md:max-w-[72ch] text-center font-semibold">
             Embark is actively looking to team up with the best pet daycare,
             boarding, and grooming providers in the US. We can develop flexible
             structures to accommodate sellers&apos; goals as they take the next
