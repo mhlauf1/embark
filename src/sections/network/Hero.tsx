@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="h-auto bg-gradient-to-b from-[#F9FDFF] relative to-[#EEF9FF] pt-6 md:pt-12 pb-24 md:pb-36">
-      <div className="absolute top-12 right-12 md:top-24 -z-1 md:right-[10vw]">
+    <section className="h-auto bg-gradient-to-b from-[#F9FDFF] relative to-[#EEF9FF]  md:pt-12 pb-24 md:pb-36">
+      <div className="absolute top-4 right-4 md:top-24 -z-1 md:right-[10vw]">
         <Image
           src="/blue-circles.png"
           alt="Blue Circles"
