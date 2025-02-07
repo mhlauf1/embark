@@ -26,13 +26,7 @@ const Nav = () => {
       >
         <NavbarBrand>
           <Link href="/">
-            <Image
-              src="/nav-logo.png"
-              alt="logo"
-              className="md:h-[60px] md:w-[150px] h-[45px] w-[125px]"
-              height={60}
-              width={150}
-            />
+            <Image src="/nav-logo.png" alt="logo" height={60} width={130} />
           </Link>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-6 ml-2" justify="center">
