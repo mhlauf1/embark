@@ -20,9 +20,9 @@ const Services = () => {
         <div className="relative z-10 flex items-start flex-1 flex-col gap-5 md:gap-8">
           <div className="border border-[#183453]/50 rounded-full bg-[#EEF9FF] py-1 flex items-center gap-2 px-3 w-fit">
             <Image
-              src="/badge-paws.png"
-              height={18}
-              width={24}
+              src="/paw-small.svg"
+              height={16}
+              width={16}
               alt="Paw Prints"
             />
             <p className="font-semibold capitalize">All Your Pet Care Needs</p>

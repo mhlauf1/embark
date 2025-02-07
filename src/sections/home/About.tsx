@@ -11,13 +11,13 @@ const About = () => {
         <div className="flex flex-col gap-5 md:gap-8 items-start">
           <div className="border border-[#183453]/50 bg-[#8DD6FA] rounded-full py-1 flex flex-row items-center gap-2 px-3">
             <Image
-              src="/badge-paws.png"
-              height={18}
-              width={24}
+              src="/paw-small.svg"
+              height={16}
+              width={16}
               alt="Paw Prints"
             />
             <p className="font-semibold capitalize">
-              Local care your <span className="underline"> can</span> trust
+              Local care you <span className="underline"> can</span> trust
             </p>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-center md:text-start capitalize">
@@ -63,7 +63,7 @@ const About = () => {
             </div>
             <div className="absolute top-[-20px] right-[-20px]">
               <Image
-                src="/small-white-paw.png"
+                src="/small-white-paw.svg"
                 alt="Paw"
                 height={48}
                 width={48}

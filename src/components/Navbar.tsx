@@ -60,7 +60,7 @@ const Nav = () => {
             className="sm:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <IoMdClose size={24} /> : <IoMenuOutline size={24} />}
+            {isMenuOpen ? <IoMdClose size={32} /> : <IoMenuOutline size={32} />}
           </button>
         </NavbarContent>
       </Navbar>

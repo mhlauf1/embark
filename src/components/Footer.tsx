@@ -16,9 +16,14 @@ const Footer = () => {
       <div className=" px-4 sm:px-8 md:px-24  w-full ">
         <div className="flex flex-col flex-grow items-center justify-center">
           <div className="flex mt-24 w-full flex-col md:flex-row gap-4">
-            <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-2 md:gap-4">
+            <div className="flex items-start flex-1 bg-[#9CD8F6] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-3 md:gap-4">
               <div className="w-[64px] md:w-[72px] relative h-[64px] md:h-[72px]">
-                <Image src="/small-white-paw.png" alt="Dog Paw" fill />
+                <Image
+                  src="/large-white-paw.svg"
+                  className="rotate-12"
+                  alt="Dog Paw"
+                  fill
+                />
               </div>
 
               <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">
@@ -33,9 +38,14 @@ const Footer = () => {
                 </button>
               </Link>
             </div>
-            <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-2 md:gap-4">
+            <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-3 md:gap-4">
               <div className="w-[64px] md:w-[72px] relative h-[64px] md:h-[72px]">
-                <Image src="/small-white-paw.png" alt="Dog Paw" fill />
+                <Image
+                  className="rotate-12"
+                  src="/large-white-paw.svg"
+                  alt="Dog Paw"
+                  fill
+                />
               </div>
 
               <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">

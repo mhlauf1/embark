@@ -9,9 +9,9 @@ const Hero = () => {
           <div className="flex flex-1 items-start flex-col w-full gap-5 md:gap-8">
             <div className="border border-[#183453]/50 rounded-full bg-white py-1 flex items-center gap-2 px-3">
               <Image
-                src="/badge-paws.png"
-                height={18}
-                width={24}
+                src="/paw-small.svg"
+                height={16}
+                width={16}
                 alt="Paw Prints"
               />
               <p className="font-semibold text-base md:text-lg lg:text-xl capitalize">

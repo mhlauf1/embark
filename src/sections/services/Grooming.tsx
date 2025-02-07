@@ -8,12 +8,7 @@ const Grooming = () => {
     <div className="flex flex-col md:flex-row py-12 gap-16 items-center">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
-          <Image
-            src="/badge-paws.png"
-            height={18}
-            width={24}
-            alt="Paw Prints"
-          />
+          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
           <p className="font-semibold text-xl capitalize">Grooming</p>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">

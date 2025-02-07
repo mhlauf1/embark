@@ -14,12 +14,7 @@ const Hero = () => {
       </div>
       <div className="items-start justify-center flex flex-col py-12 px-4 sm:px-8 md:px-24">
         <div className="border border-[#183453]/50 rounded-full bg-[#D5F0FF] py-1 flex flex-row items-center gap-2 px-3">
-          <Image
-            src="/badge-paws.png"
-            height={18}
-            width={24}
-            alt="Paw Prints"
-          />
+          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
           <p className="font-semibold text-xl capitalize">
             Professional Care, Local Heart
           </p>
