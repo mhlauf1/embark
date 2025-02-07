@@ -50,7 +50,7 @@ const Hero = () => {
               />
             </div>
             <Image
-              className="absolute h-[130px] w-[130px] md:h-[170px] md:w-[170px] top-[30px] md:top-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
+              className="absolute h-[130px] w-[130px] md:h-[170px] md:w-[170px] top-[0px] md:top-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
               src="/white-badge.svg"
               alt="Embark sticker"
               height={170}
