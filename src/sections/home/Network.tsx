@@ -64,7 +64,10 @@ const LocationItem = ({ location }: { location: Location }) => (
       <p className="text-xl text-gray-700 mt-2">{location.location}</p>
       <div className="flex mt-4 flex-wrap gap-2">
         {location.tags.map((tag) => (
-          <div className="flex flex-row items-center border border-[#183453]/20 rounded-full px-4 py-2 w-fit bg-[#D5F0FF] gap-3">
+          <div
+            key={tag}
+            className="flex flex-row items-center border border-[#183453]/20 rounded-full px-4 py-2 w-fit bg-[#D5F0FF] gap-3"
+          >
             <div className="p-1 mt-1 rounded-full bg-[#183453]">
               <FaCheck className="h-[12px] w-[12px]" color="white" />
             </div>
