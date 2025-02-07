@@ -10,12 +10,10 @@ import {
 } from "@heroui/react";
 import Image from "next/image";
 import { IoMenuOutline } from "react-icons/io5";
-import useIsDesktop from "@/hooks/useIsDesktop"; // Adjust the path based on your project structure
 import { IoMdClose } from "react-icons/io";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isDesktop = useIsDesktop(); // Determine if the screen is desktop size
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
