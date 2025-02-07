@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex relative pb-16 flex-col">
+    <footer className="flex relative pb-4 md:pb-16 flex-col">
       <Image
         src="/bone-lg.png"
         alt="Large Bone"
@@ -13,7 +13,6 @@ const Footer = () => {
         width={90}
         className="absolute top-[-45px] rotate-45 left-[40%] md:left-[47%]"
       />
-      {/* <div className="bg-[#183453] h-[300px] w-full"></div> */}
       <div className=" px-4 sm:px-8 md:px-24  w-full ">
         <div className="flex flex-col flex-grow items-center justify-center">
           <div className="flex mt-24 w-full flex-col md:flex-row gap-4">
