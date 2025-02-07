@@ -19,7 +19,7 @@ const Hero = () => {
               </p>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-[16ch] md:w-full tracking-tight text-start capitalize">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-full tracking-tight text-start capitalize">
               Building Better Pet Care Together
             </h1>
 
