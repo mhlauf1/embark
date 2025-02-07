@@ -69,7 +69,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative rounded-xl overflow-hidden"
+              className="relative rounded-md md:rounded-xl overflow-hidden"
             >
               <video
                 autoPlay
