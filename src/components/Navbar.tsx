@@ -17,10 +17,11 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <>
       <Navbar
-        className="px-2 sm:px-6 md:px-20 z-20 py-2 bg-white border-b shadow-sm"
+        className="px-2 sm:px-6 md:px-20 z-50 py-2 bg-white border-b shadow-sm"
         maxWidth="full"
       >
         <NavbarBrand>
@@ -56,10 +57,7 @@ const Nav = () => {
               Contact
             </button>
           </NavbarItem>
-          <button
-            className="sm:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <button className="sm:hidden text-[#183453]" onClick={toggleMenu}>
             {isMenuOpen ? <IoMdClose size={32} /> : <IoMenuOutline size={32} />}
           </button>
         </NavbarContent>
@@ -67,50 +65,49 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 bg-white z-20 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-0 bg-white/95 backdrop-blur-sm z-40 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col items-center mt-[10vh] bg-neutral-50 h-auto mx-8 py-12 rounded-md  text-neutral-900 text-lg space-y-6">
+        <div className="flex flex-col items-center gap-8 pt-32 px-8">
           <Link
-            className="hover:text-neutral-500 transition"
-            onChange={toggleMenu}
+            className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
+            onClick={toggleMenu}
             href="/"
           >
             Home
           </Link>
-
           <Link
-            className="hover:text-neutral-500 transition"
-            onChange={toggleMenu}
+            className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
+            onClick={toggleMenu}
             href="/about"
           >
             About
           </Link>
-
           <Link
-            className="hover:text-neutral-500 transition"
-            onChange={toggleMenu}
+            className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
+            onClick={toggleMenu}
             href="/services"
           >
             Services
           </Link>
-
           <Link
-            className="hover:text-neutral-500 transition"
-            onChange={toggleMenu}
+            className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
+            onClick={toggleMenu}
             href="/network"
           >
             Network
           </Link>
-
           <Link
-            className="hover:text-neutral-500 transition"
-            onChange={toggleMenu}
+            className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
+            onClick={toggleMenu}
             href="/partner-with-us"
           >
             Partner With Us
           </Link>
+          <button className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453] mt-4">
+            Contact
+          </button>
         </div>
       </div>
     </>

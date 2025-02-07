@@ -22,12 +22,10 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold w-full tracking-tight text-start capitalize">
               Building Better Pet Care Together
             </h1>
-
             <p className="text-base sm:text-lg md:text-xl w-auto md:max-w-[42ch] font-semibold">
               We&apos;re uniting local pet care brands to create exceptional
               experiences for pets and their families
             </p>
-
             <Image
               className="mt-4 hidden md:block md:mt-8 w-[150px] md:w-[200px] h-auto"
               src="/dogs-drawing.png"
@@ -36,7 +34,6 @@ const Hero = () => {
               alt="Dog drawing"
             />
           </div>
-
           {/* Right Image */}
           <div className="flex-1 w-full hidden md:flex justify-end md:w-auto">
             <Image
