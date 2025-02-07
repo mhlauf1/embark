@@ -72,38 +72,33 @@ const Nav = () => {
         <div className="flex flex-col items-center gap-8 pt-32 px-8">
           <Link
             className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
-            onClick={toggleMenu}
             href="/"
           >
-            Home
+            <button onChange={toggleMenu}>Home</button>
           </Link>
           <Link
             className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
-            onClick={toggleMenu}
             href="/about"
           >
-            About
+            <button onChange={toggleMenu}>About</button>
           </Link>
           <Link
             className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
-            onClick={toggleMenu}
             href="/services"
           >
-            Services
+            <button onChange={toggleMenu}>Services</button>
           </Link>
           <Link
             className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
-            onClick={toggleMenu}
             href="/network"
           >
-            Network
+            <button onChange={toggleMenu}>Network</button>
           </Link>
           <Link
             className="text-xl font-medium text-[#183453] hover:text-[#183453]/70 transition"
-            onClick={toggleMenu}
             href="/partner-with-us"
           >
-            Partner With Us
+            <button onChange={toggleMenu}>Partner With Us</button>
           </Link>
           <button className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453] mt-4">
             Contact
