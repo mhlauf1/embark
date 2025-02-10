@@ -51,7 +51,7 @@ const Daycare = () => {
             width={90}
             className="absolute hidden md:block top-[-40] left-[-40]"
           />
-          <div className="flex flex-1">
+          <div className="flex h-[400px] flex-1">
             <Image
               alt="Daycare"
               src="/daycare-1.png"
@@ -60,7 +60,7 @@ const Daycare = () => {
               width={500}
             />
           </div>
-          <div className="flex flex-1">
+          <div className="flex h-[400px] flex-1">
             <Image
               alt="Daycare"
               src="/daycare-2.png"
