@@ -15,7 +15,6 @@ const Boarding = () => {
             className="rounded-xl border border-[#183453] w-full"
             height={400}
             width={350}
-            style={{ height: "auto" }}
           />
         </div>
         <div className="flex-1">
@@ -25,7 +24,6 @@ const Boarding = () => {
             className="rounded-xl border border-[#183453] w-full"
             height={400}
             width={350}
-            style={{ height: "auto" }}
           />
         </div>
       </div>

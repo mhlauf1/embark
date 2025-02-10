@@ -60,8 +60,8 @@ const Grooming = () => {
               alt="Daycare"
               src="/grooming-2.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
-              height={100}
-              width={100}
+              height={500}
+              width={760}
             />
           </div>
         </div>
