@@ -51,20 +51,20 @@ const Daycare = () => {
             width={90}
             className="absolute hidden md:block top-[-40] left-[-40]"
           />
-          <div className="flex h-[400px] flex-1">
+          <div className="flex flex-1">
             <Image
               alt="Daycare"
               src="/daycare-1.png"
-              className="rounded-xl border border-[#183453] object-cover"
+              className="rounded-xl min-h-[300px] border border-[#183453] object-cover"
               height={400}
               width={500}
             />
           </div>
-          <div className="flex h-[400px] flex-1">
+          <div className="flex flex-1">
             <Image
               alt="Daycare"
               src="/daycare-2.png"
-              className="rounded-xl border border-[#183453] object-cover"
+              className="rounded-xl min-h-[300px]  border border-[#183453] object-cover"
               height={400}
               width={350}
             />
