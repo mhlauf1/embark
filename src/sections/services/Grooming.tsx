@@ -58,7 +58,7 @@ const Grooming = () => {
           <div className="h-auto flex flex-1 w-full">
             <Image
               alt="Daycare"
-              src="/grooming-1.png"
+              src="/grooming-2.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
               height={100}
               width={100}

@@ -8,13 +8,13 @@ const Health = () => {
     <div className="flex flex-col-reverse md:flex-row gap-16  items-center py-12">
       <div className="flex relative flex-1 w-full md:items-end flex-col gap-2">
         <div className="flex flex-row w-full gap-2">
-          <div className="h-auto  flex flex-1 w-full">
+          <div className="h-auto flex flex-1 w-full">
             <Image
               alt="Daycare"
               src="/health-wellness.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
-              height={100}
-              width={100}
+              height={500}
+              width={760}
             />
           </div>
         </div>

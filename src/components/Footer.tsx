@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
 
               <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">
-                Parter with us
+                Partner with us
               </h3>
               <p className="mb-3 md:mb-6 font-medium text-lg md:text-2xl">
                 Join our network of pet care excellence

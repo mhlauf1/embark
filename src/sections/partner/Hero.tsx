@@ -4,9 +4,10 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="bg-[#D5F0FF] relative min-h-screen">
-      <div className=" px-4 sm:px-8 md:px-24 py-12 md:py-24">
+    <section className="bg-[#D5F0FF] relative">
+      <div className="container mx-auto px-4 sm:px-8 md:px-24 py-8 md:py-16 lg:py-24">
         <div className="flex flex-col items-center">
+          {/* Badge */}
           <div className="border border-[#183453]/50 bg-white rounded-full py-1 flex items-center gap-2 px-3">
             <Image
               src="/paw-small.svg"
@@ -17,44 +18,54 @@ const Hero = () => {
             <p className="font-semibold capitalize">Join the network</p>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-5 md:mt-8 tracking-tight text-center capitalize">
+          {/* Heading */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-4 md:mt-6 lg:mt-8 tracking-tight text-center capitalize">
             We want to partner with you
           </h1>
 
-          <p className="pt-5 md:pt-8 text-lg md:text-xl w-auto md:max-w-[72ch] text-center font-semibold">
+          {/* Description */}
+          <p className="pt-4 md:pt-6 lg:pt-8 text-base sm:text-lg md:text-xl w-full md:max-w-[72ch] text-center font-semibold">
             Embark is actively looking to team up with the best pet daycare,
             boarding, and grooming providers in the US. We can develop flexible
             structures to accommodate sellers&apos; goals as they take the next
             step with their business
           </p>
 
-          <div className="flex items-center w-full md:w-auto mt-12 flex-col sm:flex-row gap-4">
+          {/* Form */}
+          <div className="flex items-center w-full md:w-auto mt-8 lg:mt-12 flex-col sm:flex-row gap-4">
             <input
               placeholder="Enter your email"
               type="email"
-              className="w-full sm:w-[400px] py-4 border border-[#183453]/20 px-3 rounded-md"
+              className="w-full sm:w-[400px] py-3 md:py-4 border border-[#183453]/20 px-3 rounded-md"
             />
-            <button className="w-full sm:w-auto font-medium border border-[#183453]/20 tracking-wide rounded-md py-4 px-8 bg-[#9CD8F6]">
+            <button className="w-full sm:w-auto font-medium border border-[#183453]/20 tracking-wide rounded-md py-3 md:py-4 px-6 md:px-8 bg-[#9CD8F6]">
               Submit
             </button>
           </div>
 
-          <div className="relative mt-12 w-full">
-            <div className="w-full relative h-[700px]">
+          {/* Hero Image Container */}
+          <div className="relative mt-8 lg:mt-12 w-full">
+            <div className="w-full relative aspect-[16/9] md:aspect-[21/9]">
               <Image
                 src="/partner-hero.png"
                 fill
                 alt="Embark's Network"
                 className="rounded-2xl object-cover border border-[#183453]"
-                sizes="100vw"
+                sizes="(max-width: 640px) 100vw,
+                       (max-width: 1024px) 90vw,
+                       80vw"
+                priority
               />
             </div>
+
+            {/* Badge Overlay */}
             <Image
-              className="absolute hidden md:block :h-[130px] w-[170px] top-[0px] md:top-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
+              className="absolute hidden md:block w-32 lg:w-40 xl:w-44 top-[-30px] lg:top-[-40px] left-[-20px] lg:left-[-30px]"
               src="/white-badge.svg"
               alt="Embark sticker"
-              height={170}
               width={170}
+              height={170}
+              priority
             />
           </div>
         </div>
