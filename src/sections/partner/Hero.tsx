@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-4 md:mt-6 lg:mt-8 tracking-tight text-center capitalize">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-4 md:mt-6 lg:mt-8 tracking-tight text-center capitalize">
             We want to partner with you
           </h1>
 
