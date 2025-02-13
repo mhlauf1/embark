@@ -33,7 +33,7 @@ const Tenets = () => {
   return (
     <section className="py-24 bg-[#EFF9FF] md:py-36 ">
       <div className="px-4 sm:px-8 md:px-24 flex flex-col">
-        <div className="grid mt-16 grid-cols-1 md:grid-cols-3 gap-16 md:gap-10">
+        <div className="grid  grid-cols-1 md:grid-cols-3 gap-16 md:gap-10">
           {tenetData.map((item) => (
             <div key={item.id}>
               <TenetsItem text={item.text} title={item.title} />
