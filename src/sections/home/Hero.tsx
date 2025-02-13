@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="items-start mt-[7vh] md:mt-[10vh] h-full z-10 justify-between flex flex-col">
           <div className="flex flex-col md:flex-row w-full  justify-between">
             <div className="flex z-5 flex-1 items-start flex-col gap-6">
-              <h1 className="text-5xl font-bold tracking-tighter md:text-6xl lg:text-7xl xl:text-8xl text-center md:text-start capitalize">
+              <h1 className="text-5xl font-bold tracking-tighter md:text-6xl lg:text-7xl xl:text-8xl text-start capitalize">
                 Caring for your{" "}
                 <span className="text-white">
                   <br /> pets
