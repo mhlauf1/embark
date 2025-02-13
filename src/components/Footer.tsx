@@ -29,8 +29,9 @@ const Footer = () => {
               <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">
                 Partner with us
               </h3>
-              <p className="mb-3 md:mb-6 font-medium text-lg md:text-2xl">
-                Join our network of pet care excellence
+              <p className="mb-3 md:mb-6 font-medium w-full md:mt-1 text-lg md:text-2xl">
+                We are actively looking to partner with the best pet care
+                facilities in the country
               </p>
               <Link href="/partner-with-us">
                 <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
@@ -51,7 +52,7 @@ const Footer = () => {
               <h3 className="text-3xl md:text-5xl font-semibold tracking-tight">
                 Find Care Near You
               </h3>
-              <p className="mb-3 md:mb-6 font-medium text-lg md:text-2xl">
+              <p className="mb-3 md:mb-6 font-medium md:mt-1 text-lg md:text-2xl">
                 Discover quality pet care in your community
               </p>
               <Link href="/network">

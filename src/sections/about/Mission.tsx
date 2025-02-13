@@ -19,13 +19,13 @@ const missionData: MissionItemProps[] = [
     bullets: [
       "Elevated  pet care",
       "Seamless customer experience",
-      "Your pet will want to come back",
+      "Happy at drop off, happy at pick-up",
     ],
   },
   {
     id: 1,
-    src: "/local-video.mp4",
-    type: "video",
+    src: "/mission-2.png",
+    type: "image",
     title: "Local Is Better",
     bullets: [
       "Established, long-term relationships",
@@ -39,7 +39,7 @@ const missionData: MissionItemProps[] = [
     type: "image",
     title: "Network of Excellence",
     bullets: [
-      "Best practice sharing",
+      "Sharing best practices",
       "Staff development",
       "Consistent quality with local touch",
     ],

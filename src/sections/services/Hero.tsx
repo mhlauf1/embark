@@ -21,7 +21,7 @@ const Hero = () => {
               alt="Paw Prints"
             />
             <p className="font-semibold text-xl capitalize">
-              Professional Care, Local Heart
+              Complete, Expert Care
             </p>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-5 md:mt-8 md:w-full tracking-tight text-start capitalize">

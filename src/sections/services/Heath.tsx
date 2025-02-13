@@ -29,7 +29,7 @@ const Health = () => {
         </h2>
         <p className="my-5 md:my-8 w-full md:w-[85%] text-lg md:text-xl font-medium">
           From routine check-ups & specialized care to breed-specific training,
-          we&apos; re here to support your pet&apos; s health and development at
+          we&apos;re here to support your pet&apos;s health and development at
           every stage of life
         </p>
         <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 max-w-3xl w-full">

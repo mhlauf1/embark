@@ -20,7 +20,7 @@ const Grooming = () => {
           trained expertise with premium products in our safe, well-equipped
           facilities
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 md:gap-16 max-w-2xl w-full">
+        <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 max-w-2xl w-full">
           <div className="flex flex-col gap-2 items-center">
             <FaBath className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
             <p className="text-sm sm:text-base md:text-lg text-center font-medium">
@@ -36,19 +36,13 @@ const Grooming = () => {
               className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
             />
             <p className="text-sm sm:text-base md:text-lg text-center font-medium">
-              Ears
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 items-center">
-            <RiToothLine className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
-            <p className="text-sm sm:text-base md:text-lg text-center font-medium">
-              Teeth & Nails
+              Ears, Teeth, and Nails
             </p>
           </div>
           <div className="flex flex-col gap-2 items-center">
             <RiScissors2Line className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
             <p className="text-sm sm:text-base md:text-lg text-center font-medium">
-              Cuts & Spa Days
+              Cuts & Spa
             </p>
           </div>
         </div>

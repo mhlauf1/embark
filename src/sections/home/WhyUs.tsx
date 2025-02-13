@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
+import Link from "next/link";
 
 const WhyUsBulletItem = ({ text, title }: { text: string; title: string }) => (
   <div className="flex flex-row items-start gap-3">
@@ -33,14 +34,16 @@ const WhyUs = () => {
                   Professional Pet Care Network
                 </p>
               </div>
-              <h2 className="text-4xl w-[80%] md:w-[16ch] md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize ">
-                Quality Care Built On Trust and Experts
+              <h2 className="text-4xl w-auto md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize ">
+                Expert Care Built on Trust
               </h2>
             </div>
             <div className="flex mt-4 md:mt-0 justify-end flex-1">
-              <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
-                Hear from our customers
-              </button>
+              <Link href="/partner-with-us">
+                <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
+                  Join the network
+                </button>
+              </Link>
             </div>
           </div>
         </div>

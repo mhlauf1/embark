@@ -45,7 +45,7 @@ const Hero = () => {
 
           {/* Hero Image Container */}
           <div className="relative mt-8 lg:mt-12 w-full">
-            <div className="w-full relative aspect-[16/9] md:aspect-[21/9]">
+            <div className="w-full relative aspect-[16/9]">
               <Image
                 src="/partner-hero.png"
                 fill

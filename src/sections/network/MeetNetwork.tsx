@@ -10,7 +10,7 @@ const networkData = [
     title: "Rio Grooming School & Salon",
     link: "https://riogrooming.com/",
     location: "Hastings, MN",
-    services: ["Grooming", "Grooming Education", "Self-services Dog Wash"],
+    services: ["Grooming", "Grooming Education", "Self-Serve Dog Wash"],
   },
   {
     id: 1,
@@ -18,7 +18,7 @@ const networkData = [
     title: "Barks & Rec Hastings",
     link: "https://www.barksnrec.co/",
     location: "Hastings, MN",
-    services: ["Daycare", "Boarding"],
+    services: ["Daycare", "Boarding", "Bathing"],
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ const MeetNetwork = () => {
           Meet our network
         </h2>
         <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
-          Five trusted local brands delivering quality pet care across the
+          Four trusted local brands delivering quality pet care across the
           Midwest
         </p>
         <div className="grid grid-cols-1 mt-16 w-full gap-y-6">

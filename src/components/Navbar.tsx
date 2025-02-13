@@ -53,11 +53,25 @@ const Nav = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden sm:flex">
-            <button className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453]">
-              Contact
-            </button>
+            <a
+              className="cursor-pointer group"
+              href="mailto:admin@embarkpetservices.com?subject=Inquiry from Website"
+            >
+              <button
+                className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 
+        bg-white text-[#183453] transition-all duration-300 ease-out
+        hover:bg-neutral-50 hover:border-[#183453]/20
+        active:scale-95 active:shadow-md"
+              >
+                Contact
+              </button>
+            </a>
           </NavbarItem>
-          <button className="sm:hidden text-[#183453]" onClick={toggleMenu}>
+          <button
+            className="sm:hidden text-[#183453] transition-transform duration-200 
+      hover:scale-110 active:scale-90"
+            onClick={toggleMenu}
+          >
             {isMenuOpen ? <IoMdClose size={32} /> : <IoMenuOutline size={32} />}
           </button>
         </NavbarContent>
@@ -100,9 +114,14 @@ const Nav = () => {
           >
             <button onChange={toggleMenu}>Partner With Us</button>
           </Link>
-          <button className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453] mt-4">
-            Contact
-          </button>
+          <a
+            className="cursor-pointer"
+            href="mailto:admin@embarkpetservices.com?subject=Inquiry from Website"
+          >
+            <button className="font-medium border border-[#183453]/50 tracking-wide rounded-full py-3 px-6 bg-white text-[#183453] mt-4">
+              Contact
+            </button>
+          </a>
         </div>
       </div>
     </>
