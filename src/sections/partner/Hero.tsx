@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="bg-[#D5F0FF] relative">
-      <div className="container mx-auto px-4 sm:px-8 md:px-24 py-8 md:py-16 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-8 md:px-24 pt-6 md:pt-0 py-8 md:py-16 lg:py-24">
         <div className="flex flex-col items-center">
           {/* Badge */}
           <div className="border border-[#183453]/50 bg-white rounded-full py-1 flex items-center gap-2 px-3">
