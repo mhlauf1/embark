@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { RiToothLine } from "react-icons/ri";
 import { RiScissors2Line } from "react-icons/ri";
 import { FaBath } from "react-icons/fa";
 
