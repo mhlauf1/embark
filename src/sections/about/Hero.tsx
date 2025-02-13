@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="flex-1 w-full md:hidden flex">
             <Image
-              src="/mobile-about-hero.png"
+              src="/about-hero-mobile.png"
               height={575}
               width={625}
               alt="Dog bathing"
