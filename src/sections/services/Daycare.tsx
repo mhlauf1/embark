@@ -49,7 +49,7 @@ const Daycare = () => {
             alt="Large Bone"
             height={90}
             width={90}
-            className="absolute hidden md:block top-[-40] left-[-40]"
+            className="absolute hidden md:block top-[-40px] left-[-40px]"
           />
           <div className="flex flex-1">
             <Image

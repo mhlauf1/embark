@@ -21,7 +21,7 @@ const Nav = () => {
   return (
     <>
       <Navbar
-        className="px-2 sm:px-6 md:px-20 z-50 py-2 bg-white border-b shadow-sm"
+        className="px-2 sm:px-6 md:px-20 z-[999] py-2 bg-white border-b shadow-sm"
         maxWidth="full"
       >
         <NavbarBrand>
