@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   description:
     "Embark Pet Services unites four trusted local pet care brands delivering professional boarding, grooming, daycare, and veterinary services across the Midwest. Quality care you can trust, backed by network excellence.",
   keywords: [
+    "embark pet services",
+    "embark dog servcies",
     "pet services",
     "pet care",
     "dog boarding",
@@ -18,30 +20,6 @@ export const metadata: Metadata = {
     "veterinary services",
     "Midwest pet care",
   ],
-  openGraph: {
-    title: "Embark Pet Services | Premium Pet Care Network Across the Midwest",
-    description:
-      "Embark Pet Services unites four trusted local pet care brands delivering professional boarding, grooming, daycare, and veterinary services across the Midwest.",
-    url: "https://www.embarkpetservices.com",
-    siteName: "Embark Pet Services",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://www.embarkpetservices.com/images/og-image.jpg", // Create this image if it doesn't exist
-        width: 1200,
-        height: 630,
-        alt: "Embark Pet Services logo and branding",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Embark Pet Services | Premium Pet Care Network",
-    description:
-      "Professional boarding, grooming, daycare, and veterinary services across the Midwest.",
-    images: ["https://www.embarkpetservices.com/images/twitter-image.jpg"], // Create this image if it doesn't exist
-  },
   robots: {
     index: true,
     follow: true,
@@ -53,10 +31,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.embarkpetservices.com",
   },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png", // Add this file if it doesn't exist
-  },
+  metadataBase: new URL("https://www.embarkpetservices.com"),
 };
 
 const inter = Inter({
