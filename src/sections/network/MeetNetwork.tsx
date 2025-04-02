@@ -77,7 +77,12 @@ const MeetNetwork = () => {
     <section className="bg-[#EEF9FF] flex flex-col py-24 md:py-36">
       <div className="flex flex-col items-center justify-center w-full px-4 sm:px-8 md:px-24">
         <div className="border border-[#183453]/50 bg-[#D5F0FF] rounded-full py-1 flex items-center gap-2 px-3">
-          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
+          <Image
+            src="/paw-small.svg"
+            height={16}
+            width={16}
+            alt="Embark Pet Services Badge Paw Prints"
+          />
           <p className="font-semibold capitalize">
             Midwest&apos;s Trusted Pet Care
           </p>

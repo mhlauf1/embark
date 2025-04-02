@@ -31,7 +31,7 @@ const Hero = () => {
               src="/dogs-drawing.png"
               height={65}
               width={200}
-              alt="Dog drawing"
+              alt="Embark Pet Services Dog drawing"
             />
           </div>
           {/* Right Image */}
@@ -40,7 +40,7 @@ const Hero = () => {
               src="/about-hero.png"
               height={575}
               width={625}
-              alt="Dog bathing"
+              alt="Embark Pet Services Dog Services"
               className="w-full h-auto md:w-[625px] mx-auto md:mx-0"
             />
           </div>
@@ -49,7 +49,7 @@ const Hero = () => {
               src="/about-hero-mobile.png"
               height={575}
               width={625}
-              alt="Dog bathing"
+              alt="Embark Pet Services Dog Services"
               className="w-full h-auto"
             />
           </div>

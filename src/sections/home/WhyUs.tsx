@@ -28,7 +28,7 @@ const WhyUs = () => {
                   src="/paw-small.svg"
                   height={16}
                   width={16}
-                  alt="Paw Prints"
+                  alt="Embark Pet Services Badge Paw Prints"
                 />
                 <p className="font-semibold  capitalize">
                   Professional Pet Care Network
@@ -70,13 +70,18 @@ const WhyUs = () => {
               </div>
             </div>
             <div className="hidden md:block">
-              <Image src="/cat-1.png" width={150} height={125} alt="Cat" />
+              <Image
+                src="/cat-1.png"
+                width={150}
+                height={125}
+                alt="Embark Pet Services Cat Services"
+              />
             </div>
           </div>
           <div className="flex mt-12 md:mt-0 flex-col md:flex-row w-full md:w-fit gap-4">
             <div className="hidden md:flex flex-col gap-4 mt-auto md:items-center">
               <Image
-                alt="bone"
+                alt="Embark Pet Services Bone"
                 src="/bone-lg.png"
                 height={124}
                 width={124}
@@ -94,7 +99,7 @@ const WhyUs = () => {
             </div>
             <div className="space-y-4 w-full md:w-auto">
               <Image
-                alt="Why Choose Embark?"
+                alt="Why Choose Embark Pet Services?"
                 src="/cat-trimming.jpg"
                 className="w-full hidden md:block md:w-[420px] rounded-xl border-2 border-[#183453] object-cover"
                 height={300}

@@ -43,26 +43,12 @@ const Hero = () => {
                   src="/hero-badge.png"
                   height={300}
                   width={300}
-                  alt="Hero Badge"
+                  alt="Embark Pet Services Badge"
                   className=" rounded-full object-contain"
                 />
               </motion.div>
             </div>
           </div>
-          {/* <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt flex w-full justify-end"
-          >
-            <Image
-              src="/hero-pup-drawing.png"
-              alt="Embark drawing"
-              height={90}
-              width={350}
-            />
-          </motion.div> */}
-
           <div className="mt-6 md:mt-12  w-full ">
             <motion.div
               initial={{ opacity: 0 }}

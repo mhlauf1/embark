@@ -10,7 +10,7 @@ const Boarding = () => {
       <div className="flex flex-1 gap-4">
         <div className="flex-1">
           <Image
-            alt="Daycare"
+            alt="Embark Pet Services Boarding"
             src="/boarding-1.png"
             className="rounded-xl border border-[#183453] w-full"
             height={400}
@@ -19,7 +19,7 @@ const Boarding = () => {
         </div>
         <div className="flex-1">
           <Image
-            alt="boarding"
+            alt="Embark Pet Services Boarding"
             src="/boarding-2.png"
             className="rounded-xl border border-[#183453] w-full"
             height={400}
@@ -29,7 +29,12 @@ const Boarding = () => {
       </div>
       <div className="flex flex-[1] items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
-          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
+          <Image
+            src="/paw-small.svg"
+            height={16}
+            width={16}
+            alt="Embark Pet Services Badge Paw Prints"
+          />
           <p className="font-semibold text-xl capitalize">Boarding</p>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">

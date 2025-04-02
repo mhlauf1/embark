@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="absolute top-4 -z-1 right-4 md:top-24 md:right-[10vw]">
           <Image
             src="/blue-circles.png"
-            alt="Blue Circles"
+            alt="Embark Pet Services Blue Circles"
             height={40}
             width={50}
           />
@@ -18,7 +18,7 @@ const Hero = () => {
               src="/paw-small.svg"
               height={16}
               width={16}
-              alt="Paw Prints"
+              alt="Embark Pet Services Paw Prints"
             />
             <p className="font-semibold text-xl capitalize">
               Complete, Expert Care
@@ -37,7 +37,7 @@ const Hero = () => {
                 <Image
                   src="/service-2.png"
                   fill
-                  alt="Embark's Services"
+                  alt="Embark Pet Services"
                   className="rounded-2xl object-cover border border-[#183453]"
                   sizes="100vw"
                 />
@@ -46,7 +46,7 @@ const Hero = () => {
             <Image
               className="absolute hidden md:block bottom-[-90px] md:bottom-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
               src="/white-badge.svg"
-              alt="Embark sticker"
+              alt="Embark Pet Services sticker"
               height={170}
               width={170}
             />

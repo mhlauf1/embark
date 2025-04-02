@@ -37,7 +37,12 @@ const ServicesHighlight = () => {
     <section className="py-24 md:py-36 ">
       <div className="px-4 sm:px-8 md:px-24 flex flex-col">
         <div className="flex flex-col gap-4 items-start">
-          <Image src="/ball.png" height={60} width={60} alt="Paw Prints" />
+          <Image
+            src="/ball.png"
+            height={60}
+            width={60}
+            alt="Embark Pet Services Paw Prints"
+          />
           <h2 className="text-4xl mt-4 md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start capitalize w-auto md:w-[20ch]">
             Professional Pet Services Tailored for You
           </h2>

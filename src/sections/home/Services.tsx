@@ -23,7 +23,7 @@ const Services = () => {
               src="/paw-small.svg"
               height={16}
               width={16}
-              alt="Paw Prints"
+              alt="Embark Pet Services Badge Paw Prints"
             />
             <p className="font-semibold capitalize">All Your Pet Care Needs</p>
           </div>
@@ -70,7 +70,7 @@ const Services = () => {
           <div className="absolute hidden md:block md:top-[-50px] md:right-[-50px]">
             <Image
               src="/blue-circles.png"
-              alt="Blue Circles"
+              alt="Embark Pet Services Blue Circles"
               height={40}
               width={50}
             />
@@ -79,7 +79,7 @@ const Services = () => {
             src="/happy-dog.png"
             height={725}
             width={725}
-            alt="Background Paw"
+            alt="Embark Pet Services Background Paw"
             className="border-2 h-[450px] w-[450px] md:w-[725px] md:h-[725px] border-[#183453] rounded-full object-cover"
           />
         </div>

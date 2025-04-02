@@ -7,7 +7,12 @@ const Grooming = () => {
     <div className="flex flex-col md:flex-row py-12 gap-16 items-center">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
-          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
+          <Image
+            src="/paw-small.svg"
+            height={16}
+            width={16}
+            alt="Embark Pet Services Badge Paw Prints"
+          />
           <p className="font-semibold text-xl capitalize">Grooming</p>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">
@@ -31,7 +36,7 @@ const Grooming = () => {
               src="/dog-ear.png"
               height={48}
               width={48}
-              alt="Grooming"
+              alt="Embark Pet Services Grooming"
               className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
             />
             <p className="text-sm sm:text-base md:text-lg text-center font-medium">
@@ -50,7 +55,7 @@ const Grooming = () => {
         <div className="flex flex-col w-full gap-2">
           <div className="h-auto flex flex-1 w-full">
             <Image
-              alt="Daycare"
+              alt="Embark Pet Services Grooming"
               src="/grooming-2.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
               height={500}

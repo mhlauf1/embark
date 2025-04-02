@@ -10,7 +10,7 @@ const Health = () => {
         <div className="flex flex-row w-full gap-2">
           <div className="h-auto flex flex-1 w-full">
             <Image
-              alt="Daycare"
+              alt="Embark Pet Services Health"
               src="/health-wellness.png"
               className="rounded-xl flex-grow flex flex-1 border border-[#183453]"
               height={500}
@@ -21,7 +21,12 @@ const Health = () => {
       </div>
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
-          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
+          <Image
+            src="/paw-small.svg"
+            height={16}
+            width={16}
+            alt="Embark Pet Services Badge Paw Prints"
+          />
           <p className="font-semibold text-xl capitalize">Health & Wellness</p>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">

@@ -13,7 +13,7 @@ const Hero = () => {
               src="/paw-small.svg"
               height={16}
               width={16}
-              alt="Paw Prints"
+              alt="Embark Pet Services Badge Paw Prints"
             />
             <p className="font-semibold capitalize">Join the network</p>
           </div>
@@ -49,7 +49,7 @@ const Hero = () => {
               <Image
                 src="/partner-hero.png"
                 fill
-                alt="Embark's Network"
+                alt="Join Embark Pet Services Network"
                 className="rounded-2xl object-cover border border-[#183453]"
                 sizes="(max-width: 640px) 100vw,
                        (max-width: 1024px) 90vw,
@@ -62,7 +62,7 @@ const Hero = () => {
             <Image
               className="absolute hidden md:block w-32 lg:w-40 xl:w-44 top-[-30px] lg:top-[-40px] left-[-20px] lg:left-[-30px]"
               src="/white-badge.svg"
-              alt="Embark sticker"
+              alt="Embark Pet Services sticker"
               width={170}
               height={170}
               priority

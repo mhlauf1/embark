@@ -14,7 +14,7 @@ const About = () => {
               src="/paw-small.svg"
               height={16}
               width={16}
-              alt="Paw Prints"
+              alt="Embark Pet Services Badge Paw Prints"
             />
             <p className="font-semibold capitalize">Local care you can trust</p>
           </div>
@@ -45,7 +45,7 @@ const About = () => {
             src="/about-us-home.jpg"
             height={500}
             width={760}
-            alt="Dog bathing"
+            alt="Embark Pet Services Dog Bathing"
             className="rounded-xl border-2 border-[#183453]"
           />
         </div>
@@ -62,7 +62,7 @@ const About = () => {
             <div className="absolute top-[-20px] right-[-20px]">
               <Image
                 src="/small-white-paw.svg"
-                alt="Paw"
+                alt="Embark Pet Services Small Paw"
                 height={48}
                 width={48}
               />

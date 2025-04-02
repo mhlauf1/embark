@@ -70,7 +70,7 @@ const Vision = () => {
                   src="/paw-small.svg"
                   height={16}
                   width={16}
-                  alt="Paw Prints"
+                  alt="Embark Pet Services Badge Paw Prints"
                 />
                 <p className="font-semibold text-lg md:text-xl capitalize">
                   The Embark Way

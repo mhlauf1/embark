@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="flex relative pb-4 md:pb-16 flex-col">
       <Image
         src="/bone-lg.png"
-        alt="Large Bone"
+        alt="Embark Pet Services Large Bone"
         height={90}
         width={90}
         className="absolute top-[-45px] rotate-45 left-[40%] md:left-[47%]"

@@ -3,7 +3,6 @@ import Nav from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Embark Pet Services | Premium Pet Care Network Across the Midwest",
@@ -50,49 +49,6 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
-
-        {/* Structured Data / JSON-LD for Local Business */}
-        <Script
-          id="local-business-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Embark Pet Services",
-              description:
-                "Embark Pet Services unites four trusted local pet care brands delivering professional boarding, grooming, daycare, and veterinary services across the Midwest.",
-              url: "https://www.embarkpetservices.com",
-              address: {
-                "@type": "PostalAddress",
-                addressRegion: "Midwest",
-                addressCountry: "US",
-              },
-              service: [
-                {
-                  "@type": "Service",
-                  name: "Pet Boarding",
-                  description: "Professional pet boarding services",
-                },
-                {
-                  "@type": "Service",
-                  name: "Pet Grooming",
-                  description: "Professional pet grooming services",
-                },
-                {
-                  "@type": "Service",
-                  name: "Pet Daycare",
-                  description: "Professional pet daycare services",
-                },
-                {
-                  "@type": "Service",
-                  name: "Veterinary Services",
-                  description: "Professional veterinary services",
-                },
-              ],
-            }),
-          }}
-        />
       </body>
     </html>
   );

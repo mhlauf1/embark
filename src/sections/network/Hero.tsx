@@ -41,7 +41,7 @@ const Hero = () => {
               <Image
                 src="/network-hero.png"
                 fill
-                alt="Embark's Network"
+                alt="Embark Pet Service's Network"
                 className="rounded-2xl object-cover border border-[#183453]"
                 sizes="100vw"
               />
@@ -50,7 +50,7 @@ const Hero = () => {
           <Image
             className="absolute bottom-[-90px] md:bottom-[-60px] -rotate-12 md:rotate-0 left-0 md:left-[-60px]"
             src="/white-badge.svg"
-            alt="Embark sticker"
+            alt="Embark Pet Services Sticker"
             height={170}
             width={170}
           />

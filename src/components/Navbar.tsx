@@ -26,7 +26,12 @@ const Nav = () => {
       >
         <NavbarBrand>
           <Link href="/">
-            <Image src="/nav-logo.png" alt="logo" height={60} width={130} />
+            <Image
+              src="/nav-logo.png"
+              alt="Embark Pet Services Logo"
+              height={60}
+              width={130}
+            />
           </Link>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-6 ml-2" justify="center">

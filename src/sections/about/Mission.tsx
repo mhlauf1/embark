@@ -86,7 +86,12 @@ const Mission = () => {
     <section className=" py-24 relative md:py-36 border w-full">
       <div className="flex  px-4 sm:px-8 md:px-24 items-center flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-white py-1 flex flex-row items-center gap-2 px-3">
-          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
+          <Image
+            src="/paw-small.svg"
+            height={16}
+            width={16}
+            alt="Embark Pet Services Badge Paw Prints"
+          />
           <p className="font-semibold text-lg md:text-xl capitalize">
             Elevating pet care
           </p>

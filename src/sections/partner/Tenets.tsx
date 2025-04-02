@@ -22,7 +22,11 @@ const tenetData = [
 const TenetsItem = ({ text, title }: { text: string; title: string }) => (
   <div className="flex flex-col items-center gap-2">
     <div className="w-[48px] md:w-[56px] relative h-[48px] md:h-[56px]">
-      <Image src="/tenet-paw.svg" alt="Dog Paw" fill />
+      <Image
+        src="/tenet-paw.svg"
+        alt="Embark Pet Services Badge Dog Paw"
+        fill
+      />
     </div>
     <h3 className="text-2xl mt-2 md:text-3xl font-semibold">{title}</h3>
     <p className="text-lg text-center  w-full font-semibold">{text}</p>

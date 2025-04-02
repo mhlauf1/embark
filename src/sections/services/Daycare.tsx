@@ -8,7 +8,12 @@ const Daycare = () => {
     <div className="flex flex-col md:flex-row gap-16 items-center">
       <div className="flex flex-1 items-start flex-col">
         <div className="border border-[#183453]/50 rounded-full bg-[#9CD8F6] py-1 flex flex-row items-center gap-2 px-3">
-          <Image src="/paw-small.svg" height={16} width={16} alt="Paw Prints" />
+          <Image
+            src="/paw-small.svg"
+            height={16}
+            width={16}
+            alt="Embark Pet Services Badge Paw Prints"
+          />
           <p className="font-semibold text-xl capitalize">Daycare</p>
         </div>
         <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-start mt-5 md:mt-8 capitalize ">
@@ -46,14 +51,14 @@ const Daycare = () => {
         <div className="flex flex-row w-full gap-2">
           <Image
             src="/bone-lg.png"
-            alt="Large Bone"
+            alt="Embark Pet Services Large Bone"
             height={90}
             width={90}
             className="absolute hidden md:block top-[-40px] left-[-40px]"
           />
           <div className="flex flex-1">
             <Image
-              alt="Daycare"
+              alt="Embark Pet Services Daycare"
               src="/daycare-1.png"
               className="rounded-xl min-h-[300px] border border-[#183453] object-cover"
               height={400}
@@ -62,7 +67,7 @@ const Daycare = () => {
           </div>
           <div className="flex flex-1">
             <Image
-              alt="Daycare"
+              alt="Embark Pet Services Daycare"
               src="/daycare-2.png"
               className="rounded-xl min-h-[300px]  border border-[#183453] object-cover"
               height={400}
