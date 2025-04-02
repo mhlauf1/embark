@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mt-5 md:mt-8 md:w-full tracking-tight text-start capitalize">
-          The Embark Network
+          The Embark Pet Service&apos;s Network
         </h1>
         <p className="pt-6 text-base sm:text-lg md:text-xl max-w-[74ch] font-semibold">
           A community of premium pet care facilities operating under one shared
