@@ -33,10 +33,11 @@ const Footer = () => {
                 We are actively looking to partner with the best pet care
                 facilities in the country
               </p>
-              <Link href="/partner-with-us">
-                <button className="font-medium text-lg md:text-xl border border-[#183453]/50  rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
-                  Learn More
-                </button>
+              <Link
+                className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white"
+                href="/partner-with-us"
+              >
+                Become a Partner
               </Link>
             </div>
             <div className="flex flex-1 items-start bg-[#EEF9FF] rounded-xl border border-[#183453] py-8 md:py-16 px-8 md:px-12 flex-col gap-3 md:gap-4">
@@ -68,7 +69,7 @@ const Footer = () => {
           <ul className="flex flex-col md:flex-row gap-4 md:gap-8">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/services">Services</Link>
+            <Link href="/services">Our Pet Services</Link>
             <Link href="/network">Network</Link>
             <Link href="/partner-with-us">Partner With Us</Link>
           </ul>
