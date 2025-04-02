@@ -61,7 +61,7 @@ const Services = () => {
           <div className="w-full flex md:justify-start justify-center">
             <Link href="/services" className="mt-6">
               <button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
-                Learn more
+                Our Pet Services
               </button>
             </Link>
           </div>
