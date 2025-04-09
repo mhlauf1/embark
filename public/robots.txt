@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Block old WordPress paths
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /xmlrpc.php
+
 Sitemap: https://www.embarkpetservices.com/sitemap.xml

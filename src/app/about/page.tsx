@@ -5,7 +5,7 @@ import Vision from "@/sections/about/OurVision";
 
 export const metadata = {
   alternates: {
-    canonical: "/about",
+    canonical: "https://www.embarkpetservices.com/about",
   },
 };
 

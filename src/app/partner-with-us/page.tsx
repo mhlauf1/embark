@@ -4,7 +4,7 @@ import Tenets from "@/sections/partner/Tenets";
 
 export const metadata = {
   alternates: {
-    canonical: "/partner-with-us",
+    canonical: "https://www.embarkpetservices.com/partner-with-us",
   },
 };
 

@@ -5,7 +5,7 @@ import ServicesList from "@/sections/services/ServicesList";
 
 export const metadata = {
   alternates: {
-    canonical: "/services",
+    canonical: "https://www.embarkpetservices.com/services",
   },
 };
 

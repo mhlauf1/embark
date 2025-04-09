@@ -5,7 +5,7 @@ import MeetNetwork from "@/sections/network/MeetNetwork";
 
 export const metadata = {
   alternates: {
-    canonical: "/network",
+    canonical: "https://www.embarkpetservices.com/network",
   },
 };
 
