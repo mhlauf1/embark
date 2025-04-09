@@ -4,12 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   async redirects() {
     return [
-      // Redirect from http to https
-      {
-        source: 'http://:path*',
-        destination: 'https://:path*',
-        permanent: true,
-      },
+      // Redirects need to start with / in Vercel
+      // For http to https, you'll need to handle this at the DNS/Vercel project level
+
       // Redirect non-www to www
       {
         source: '/:path*',
