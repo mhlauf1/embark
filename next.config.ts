@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   async redirects() {
     return [
-      // Redirect old WordPress paths
+      // Redirect all old WordPress paths
       {
         source: '/wp-content/:path*',
         destination: '/',
@@ -15,15 +14,15 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
-      // Other common WordPress paths
       {
         source: '/xmlrpc.php',
         destination: '/',
         permanent: true,
       },
+      // Handle trailing slashes consistently
       {
-        source: '/feed/:path*',
-        destination: '/',
+        source: '/:path+/',
+        destination: '/:path+',
         permanent: true,
       }
     ]
