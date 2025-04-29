@@ -3,7 +3,31 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
-      // Redirect all old WordPress paths
+      // Handle non-www to www redirects
+      {
+        source: '/',
+        has: [
+          {
+            type: 'host',
+            value: 'embarkpetservices.com',
+          },
+        ],
+        destination: 'https://www.embarkpetservices.com/',
+        permanent: true,
+      },
+      // Handle http to https redirects
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'embarkpetservices.com',
+          },
+        ],
+        destination: 'https://www.embarkpetservices.com/:path*',
+        permanent: true,
+      },
+      // Clean up old WordPress content
       {
         source: '/wp-content/:path*',
         destination: '/',
@@ -12,17 +36,6 @@ const nextConfig: NextConfig = {
       {
         source: '/wp-includes/:path*',
         destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/xmlrpc.php',
-        destination: '/',
-        permanent: true,
-      },
-      // Handle trailing slashes consistently
-      {
-        source: '/:path+/',
-        destination: '/:path+',
         permanent: true,
       }
     ]
