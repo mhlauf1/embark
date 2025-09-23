@@ -36,6 +36,14 @@ const networkData = [
     location: "Belpre, OH",
     services: ["Daycare", "Boarding", "Grooming", "Vet Care", "Training"],
   },
+  {
+    id: 3,
+    image: "/boxers-image.png",
+    title: "Hound Around Resort",
+    link: "https://houndaroundresort.com/",
+    location: "Cottage Grove, MN",
+    services: ["Daycare", "Boarding", "Grooming"],
+  },
 ];
 
 interface NetworkItemProps {
@@ -91,7 +99,7 @@ const MeetNetwork = () => {
           Meet our network
         </h2>
         <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
-          Four trusted local brands delivering quality pet care across the
+          Five trusted local brands delivering quality pet care across the
           Midwest
         </p>
         <div className="grid grid-cols-1 mt-16 w-full gap-y-6">

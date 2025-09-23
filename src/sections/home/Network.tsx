@@ -24,7 +24,7 @@ const locations: Location[] = [
     tags: ["Grooming", "Grooming Education", "Self-Service Dog Wash"],
     mapPosition: { lat: 44.76931430798924, lng: -92.86027409156992 },
     rating: 4.7,
-    reviews: 210,
+    reviews: 218,
     reviewLink:
       "https://www.google.com/search?q=Rio+Grooming+School+%26+Salon&oq=Rio+Grooming+School+%26+Salon&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDwyBggDEEUYPNIBBzQ1NWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x87f7c4784a70d1d9:0xd6b16a4eaf83eb6e,1,,,,",
   },
@@ -36,7 +36,7 @@ const locations: Location[] = [
     tags: ["Daycare", "Boarding", "Grooming"],
     mapPosition: { lat: 46.858830071276856, lng: -96.73532188223334 },
     rating: 4.4,
-    reviews: 185,
+    reviews: 195,
     reviewLink:
       "https://www.google.com/search?q=Wags+Stay+N%27+Play&sca_esv=35c83397f18a25ed&ei=ojWuZ5faG-G2ptQPqJTaqQM&ved=0ahUKEwiXs5jPn8GLAxVhm4kEHSiKNjUQ4dUDCBE&uact=5&oq=Wags+Stay+N%27+Play&gs_lp=Egxnd3Mtd2l6LXNlcnAiEVdhZ3MgU3RheSBOJyBQbGF5MgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigVI0BBQ1gZY1gZwBHgBkAEAmAGLAaABiwGqAQMwLjG4AQPIAQD4AQL4AQGYAgWgApsBwgIKEAAYsAMY1gQYR5gDAIgGAZAGCJIHAzQuMaAHswc&sclient=gws-wiz-serp#lrd=0x52c8cf2b6b24afe9:0x7e1144f2b595c885,1,,,,",
   },
@@ -46,8 +46,8 @@ const locations: Location[] = [
     location: "Hastings, MN",
     tags: ["Daycare", "Boarding"],
     mapPosition: { lat: 44.77103052242032, lng: -92.86014533006993 },
-    rating: 4.8,
-    reviews: 16,
+    rating: 4.9,
+    reviews: 53,
     reviewLink:
       "https://www.google.com/search?q=Barks+%26+Rec+Hastings&sca_esv=35c83397f18a25ed&ei=1jWuZ9OWDNftptQPk5fk4QY&ved=0ahUKEwjT2e7nn8GLAxXXtokEHZMLOWwQ4dUDCBE&uact=5&oq=Barks+%26+Rec+Hastings&gs_lp=Egxnd3Mtd2l6LXNlcnAiFEJhcmtzICYgUmVjIEhhc3RpbmdzMgcQABiABBgKMg0QLhiABBjHARgKGK8BMgYQABgWGB4yBhAAGBYYHjIIEAAYgAQYogQyBRAAGO8FMggQABiABBiiBEjRC1CHA1iHA3ADeAGQAQCYAXKgAXKqAQMwLjG4AQPIAQD4AQL4AQGYAgSgAnvCAgoQABiwAxjWBBhHmAMAiAYBkAYIkgcDMy4xoAeuCQ&sclient=gws-wiz-serp#lrd=0x87f7c5dcaed8371f:0xff578cbfb86b5932,1,,,,",
   },
@@ -58,9 +58,20 @@ const locations: Location[] = [
     tags: ["Daycare", "Boarding", "Grooming", "Vet Care", "Training"],
     mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
     rating: 4.6,
-    reviews: 254,
+    reviews: 269,
     reviewLink:
       "https://www.google.com/search?q=Boxers+Bed+%26+Biscuits&sca_esv=35c83397f18a25ed&ei=5TWuZ6HTDIu8ptQPjarC6Q4&ved=0ahUKEwjh2YLvn8GLAxULnokEHQ2VMO0Q4dUDCBE&uact=5&oq=Boxers+Bed+%26+Biscuits&gs_lp=Egxnd3Mtd2l6LXNlcnAiFUJveGVycyBCZWQgJiBCaXNjdWl0czILEC4YgAQYxwEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yGhAuGIAEGMcBGK8BGJcFGNwEGN4EGOAE2AEBSOEPUMoIWMoIcAR4AJABAJgBvQGgAb0BqgEDMC4xuAEDyAEA-AEC-AEBmAIFoALPAcICChAAGIAEGLADGArCAhAQLhiABBiwAxjHARgKGK8BwgIJEAAYsAMYCBgewgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBJgDAIgGAZAGCLoGBggBEAEYFJIHAzQuMaAHlQs&sclient=gws-wiz-serp#lrd=0x8848459108fe6ecb:0x7cfe04e12bd42000,1,,,,",
+  },
+  {
+    id: 5,
+    title: "Hound Around Resort",
+    location: "Cottage Grove, MN",
+    tags: ["Daycare", "Boarding", "Grooming"],
+    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
+    rating: 4.4,
+    reviews: 243,
+    reviewLink:
+      "https://www.google.com/search?q=hound+around+resort&oq=Hound+Around+Resort&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyCAgGEAAYFhgeMgYIBxBFGDzSAQczNDJqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x87f7d006cb0bea4d:0x2f665137d59cc10,1,,,,",
   },
 ];
 

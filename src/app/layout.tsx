@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Embark Pet Services | Premium Pet Care Network Across the Midwest",
   description:
-    "Embark Pet Services unites four trusted local pet care brands delivering professional boarding, grooming, daycare, and veterinary services across the Midwest. Quality care you can trust, backed by network excellence.",
+    "Embark Pet Services unites five trusted local pet care brands delivering professional boarding, grooming, daycare, and veterinary services across the Midwest. Quality care you can trust, backed by network excellence.",
   keywords: [
     "embark pet services",
     "embark dog servcies",
