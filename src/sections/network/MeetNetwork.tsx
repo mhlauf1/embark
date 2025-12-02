@@ -37,12 +37,20 @@ const networkData = [
     services: ["Daycare", "Boarding", "Grooming", "Vet Care", "Training"],
   },
   {
-    id: 3,
+    id: 4,
     image: "/boxers-image.png",
     title: "Hound Around Resort",
     link: "https://houndaroundresort.com/",
     location: "Cottage Grove, MN",
     services: ["Daycare", "Boarding", "Grooming"],
+  },
+  {
+    id: 5,
+    image: "/boxers-image.png",
+    title: "Kingdom Canine",
+    link: "https://kingdomcanine.com/",
+    location: "Pacific, MO",
+    services: ["Daycare", "Boarding", "Grooming", "Transportation"],
   },
 ];
 
@@ -99,7 +107,7 @@ const MeetNetwork = () => {
           Meet our network
         </h2>
         <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
-          Five trusted local brands delivering quality pet care across the
+          Six trusted local brands delivering quality pet care across the
           Midwest
         </p>
         <div className="grid grid-cols-1 mt-16 w-full gap-y-6">
