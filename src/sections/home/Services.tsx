@@ -70,7 +70,7 @@ const Services = () => {
           <div className="absolute hidden md:block md:top-[-50px] md:right-[-50px]">
             <Image
               src="/blue-circles.png"
-              alt="Embark Pet Services Blue Circles"
+              alt="Embark Pet Services"
               height={40}
               width={50}
             />

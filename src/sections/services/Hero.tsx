@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="absolute top-4 -z-1 right-4 md:top-24 md:right-[10vw]">
           <Image
             src="/blue-circles.png"
-            alt="Embark Pet Services Blue Circles"
+            alt="Embark Pet Services"
             height={40}
             width={50}
           />

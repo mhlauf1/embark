@@ -5,12 +5,7 @@ const Hero = () => {
   return (
     <section className="h-auto bg-gradient-to-b from-[#F9FDFF] relative to-[#EEF9FF] pt-4 md:pt-12 pb-24 md:pb-36">
       <div className="absolute top-4 right-4 md:top-24 -z-1 md:right-[10vw]">
-        <Image
-          src="/blue-circles.png"
-          alt="Blue Circles"
-          height={40}
-          width={50}
-        />
+        <Image src="/blue-circles.png" alt="embark" height={40} width={50} />
       </div>
       <div className="items-start justify-center flex flex-col py-12 px-4 sm:px-8 md:px-24">
         <div className="border border-[#183453]/50 rounded-full bg-[#D5F0FF] py-1 flex flex-row items-center gap-2 px-3">
