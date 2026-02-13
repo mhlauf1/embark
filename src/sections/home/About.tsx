@@ -52,7 +52,7 @@ const About = () => {
         <div className="absolute bg-white  rounded border border-[#183453] bottom-[-50px] md:bottom-[-30px] right-2">
           <div className="flex flex-row gap-8 px-8 py-4 relative">
             <div className="flex flex-col gap-1">
-              <p className="text-xl font-bold">8</p>
+              <p className="text-xl font-bold">9</p>
               <p className="font-medium">Locations</p>
             </div>
             <div className="flex flex-col gap-1">

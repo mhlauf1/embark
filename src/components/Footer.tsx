@@ -92,9 +92,12 @@ const Footer = () => {
             <Link href="https://kingdomcanine.com/" target="_blank">
               Kingdom Canine
             </Link>
+            <Link href="https://caninecountryclubwdm.com/" target="_blank">
+              Canine Country Club
+            </Link>
           </ul>
           <div className="flex items-start md:items-center flex-col">
-            <p>© Embark Pet Services, LLC 2025. All rights reserved.</p>
+            <p>© Embark Pet Services, LLC 2026. All rights reserved.</p>
             <p>
               Designed and developed by{" "}
               <Link

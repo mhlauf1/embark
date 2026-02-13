@@ -77,6 +77,16 @@ const locations: Location[] = [
     reviews: 111,
     reviewLink: "https://share.google/6dcCwLuO184jHpmeO",
   },
+  {
+    id: 7,
+    title: "Canine Country Club",
+    location: "Des Moines, IA",
+    tags: ["Daycare", "Boarding", "Grooming", "Training"],
+    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
+    rating: 4.6,
+    reviews: 443,
+    reviewLink: "https://share.google/MPURuCqc46Tl0ekuJ",
+  },
 ];
 
 const LocationItem = ({ location }: { location: Location }) => (

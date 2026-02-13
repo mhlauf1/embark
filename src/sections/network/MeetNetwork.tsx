@@ -52,6 +52,13 @@ const networkData = [
     location: "Pacific, MO",
     services: ["Daycare", "Boarding", "Grooming", "Transportation"],
   },
+  {
+    id: 7,
+    title: "Canine Country Club",
+    location: "Des Moines, IA",
+    services: ["Daycare", "Boarding", "Grooming", "Training"],
+    link: "https://caninecountryclubwdm.com/",
+  },
 ];
 
 interface NetworkItemProps {
