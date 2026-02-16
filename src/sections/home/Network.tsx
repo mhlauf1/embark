@@ -87,6 +87,16 @@ const locations: Location[] = [
     reviews: 443,
     reviewLink: "https://share.google/MPURuCqc46Tl0ekuJ",
   },
+  {
+    id: 8,
+    title: "Home Away From Home",
+    location: "Fargo, ND",
+    tags: ["Daycare", "Boarding", "Grooming", "Mobile Grooming"],
+    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
+    rating: 4.6,
+    reviews: 154,
+    reviewLink: "https://share.google/j6XoD5l9APpPL12Y4",
+  },
 ];
 
 const LocationItem = ({ location }: { location: Location }) => (

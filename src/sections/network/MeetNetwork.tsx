@@ -59,6 +59,13 @@ const networkData = [
     services: ["Daycare", "Boarding", "Grooming", "Training"],
     link: "https://caninecountryclubwdm.com/",
   },
+  {
+    id: 8,
+    title: "Home Away From Home",
+    location: "Fargo, ND",
+    services: ["Daycare", "Boarding", "Grooming", "Mobile Grooming"],
+    link: "https://caninecountryclubwdm.com/",
+  },
 ];
 
 interface NetworkItemProps {

@@ -73,29 +73,7 @@ const Footer = () => {
             <Link href="/network">Network</Link>
             <Link href="/partner-with-us">Partner With Us</Link>
           </ul>
-          <ul className="flex flex-col md:flex-row gap-4 md:gap-8">
-            <Link href="https://riogrooming.com/" target="_blank">
-              Rio Grooming & Salon
-            </Link>
-            <Link href="https://www.barksnrec.co/" target="_blank">
-              Barks & Rec Hastings
-            </Link>
-            <Link href="https://www.wagsstaynplay.com/" target="_blank">
-              Wags Stay N&apos; Play
-            </Link>
-            <Link href="https://www.boxersbedandbiscuits.com/" target="_blank">
-              Boxers Bed & Biscuits
-            </Link>
-            <Link href="https://houndaroundresort.com/" target="_blank">
-              Hound Around Resort
-            </Link>
-            <Link href="https://kingdomcanine.com/" target="_blank">
-              Kingdom Canine
-            </Link>
-            <Link href="https://caninecountryclubwdm.com/" target="_blank">
-              Canine Country Club
-            </Link>
-          </ul>
+
           <div className="flex items-start md:items-center flex-col">
             <p>© Embark Pet Services, LLC 2026. All rights reserved.</p>
             <p>
