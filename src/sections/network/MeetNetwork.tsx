@@ -64,7 +64,7 @@ const networkData = [
     title: "Home Away From Home",
     location: "Fargo, ND",
     services: ["Daycare", "Boarding", "Grooming", "Mobile Grooming"],
-    link: "https://caninecountryclubwdm.com/",
+    link: "https://www.hafhfacility.com/",
   },
 ];
 
