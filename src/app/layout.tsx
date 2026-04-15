@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Inter } from "next/font/google";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -39,6 +39,11 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
+  subsets: ["latin"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -46,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} overflow-x-hidden antialiased`}>
+      <body className={`${inter.variable} ${bricolage.variable} overflow-x-hidden antialiased`}>
         <Nav />
         {children}
         <Analytics />
