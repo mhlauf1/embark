@@ -1,105 +1,14 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import StarRating from "@/components/StarRating";
 import { FaCheck } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
+import {
+  getLocationsWithRatings,
+  type LocationWithRating,
+} from "@/lib/google-places";
 
-interface Location {
-  id: number;
-  title: string;
-  location: string;
-  tags: string[];
-  mapPosition: { lat: number; lng: number };
-  rating: number;
-  reviews: number;
-  reviewLink: string;
-}
-
-const locations: Location[] = [
-  {
-    id: 0,
-    title: "Rio Grooming School & Salon",
-    location: "Hastings, MN",
-    tags: ["Grooming", "Grooming Education", "Self-Service Dog Wash"],
-    mapPosition: { lat: 44.76931430798924, lng: -92.86027409156992 },
-    rating: 4.7,
-    reviews: 222,
-    reviewLink: "https://share.google/Xq4grRDGIZQA1PDgY",
-  },
-  {
-    id: 2,
-    title: "Wags Stay N' Play",
-    location: "Moorhead, MN",
-    tags: ["Daycare", "Boarding", "Grooming"],
-    mapPosition: { lat: 46.858830071276856, lng: -96.73532188223334 },
-    rating: 4.4,
-    reviews: 208,
-    reviewLink: "https://share.google/jI8uzrZKDaI04Mhwf",
-  },
-  {
-    id: 3,
-    title: "Barks & Rec Hastings",
-    location: "Hastings, MN",
-    tags: ["Daycare", "Boarding"],
-    mapPosition: { lat: 44.77103052242032, lng: -92.86014533006993 },
-    rating: 4.9,
-    reviews: 56,
-    reviewLink: "https://share.google/ah3nfAoXOB3KRBC91",
-  },
-  {
-    id: 4,
-    title: "Boxers Bed & Biscuits",
-    location: "Belpre, OH",
-    tags: ["Daycare", "Boarding", "Grooming", "Vet Care", "Training"],
-    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
-    rating: 4.6,
-    reviews: 272,
-    reviewLink: "https://share.google/VhnoBD8ButCcDzenP",
-  },
-  {
-    id: 5,
-    title: "Hound Around Resort",
-    location: "Cottage Grove, MN",
-    tags: ["Daycare", "Boarding", "Grooming"],
-    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
-    rating: 4.4,
-    reviews: 244,
-    reviewLink: "https://share.google/w7ulrOh6TT3b8rjQe",
-  },
-  {
-    id: 6,
-    title: "Kingdom Canine",
-    location: "Pacific, MO",
-    tags: ["Daycare", "Boarding", "Grooming", "Transportation"],
-    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
-    rating: 4.5,
-    reviews: 111,
-    reviewLink: "https://share.google/6dcCwLuO184jHpmeO",
-  },
-  {
-    id: 7,
-    title: "Canine Country Club",
-    location: "Des Moines, IA",
-    tags: ["Daycare", "Boarding", "Grooming", "Training"],
-    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
-    rating: 4.6,
-    reviews: 443,
-    reviewLink: "https://share.google/MPURuCqc46Tl0ekuJ",
-  },
-  {
-    id: 8,
-    title: "Home Away From Home",
-    location: "Fargo, ND",
-    tags: ["Daycare", "Boarding", "Grooming", "Mobile Grooming"],
-    mapPosition: { lat: 39.274995949370485, lng: -81.58609851878592 },
-    rating: 4.6,
-    reviews: 154,
-    reviewLink: "https://share.google/j6XoD5l9APpPL12Y4",
-  },
-];
-
-const LocationItem = ({ location }: { location: Location }) => (
+const LocationItem = ({ location }: { location: LocationWithRating }) => (
   <Link target="_blank" href={location.reviewLink}>
     <div className="bg-white p-6 rounded-2xl border h-full border-[#183453] group relative hover:shadow-md transition-all duration-300">
       <div className="flex justify-between items-start">
@@ -130,7 +39,9 @@ const LocationItem = ({ location }: { location: Location }) => (
   </Link>
 );
 
-const Network = () => {
+const Network = async () => {
+  const locations = await getLocationsWithRatings();
+
   return (
     <section className="py-24 md:py-36 bg-[#9CD8F6]">
       <div className="flex px-4 sm:px-8 md:px-24  flex-col">
