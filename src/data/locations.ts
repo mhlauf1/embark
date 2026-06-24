@@ -35,7 +35,7 @@ export const locations: Location[] = [
   },
   {
     id: 3,
-    title: "Barks & Rec Hastings",
+    title: "Riverside Pet Resort",
     location: "Hastings, MN",
     tags: ["Daycare", "Boarding"],
     mapPosition: { lat: 44.77103052242032, lng: -92.86014533006993 },
