@@ -40,7 +40,8 @@ export const locations: Location[] = [
     tags: ["Daycare", "Boarding"],
     mapPosition: { lat: 44.77103052242032, lng: -92.86014533006993 },
     placeId: "ChIJHzfYrtzF94cRMllruL-MV_8",
-    reviewLink: "https://share.google/ah3nfAoXOB3KRBC91",
+    reviewLink:
+      "https://search.google.com/local/reviews?placeid=ChIJHzfYrtzF94cRMllruL-MV_8",
     fallbackRating: 4.9,
     fallbackReviews: 56,
   },

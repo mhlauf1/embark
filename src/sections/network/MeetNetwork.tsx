@@ -16,7 +16,7 @@ const networkData = [
     id: 1,
     image: "/barks-image.png",
     title: "Riverside Pet Resort",
-    link: "https://www.barksnrec.co/",
+    link: "https://riversidepetmn.com/",
     location: "Hastings, MN",
     services: ["Daycare", "Boarding", "Bathing"],
   },
