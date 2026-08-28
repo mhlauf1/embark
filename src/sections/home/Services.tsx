@@ -6,16 +6,18 @@ import { FaCheck } from "react-icons/fa6";
 
 const Services = () => {
   const ServiceItem = ({ text }: { text: string }) => (
-    <div className="flex flex-row items-center border border-[#183453]/20 rounded-full px-4 py-3 w-full md:w-fit bg-[#D5F0FF] gap-3">
+    <div className="flex flex-row items-center border border-[#183453]/20 rounded-full px-4 py-3 w-full lg:w-fit bg-[#D5F0FF] gap-3">
       <div className="p-1 mt-1 rounded-full bg-[#183453]">
         <FaCheck size={12} color="white" />
       </div>
-      <p className="text-xl w-full text-[#183453] font-medium">{text}</p>
+      <p className="text-xl whitespace-nowrap text-[#183453] font-medium">
+        {text}
+      </p>
     </div>
   );
   return (
-    <section className="py-24 m:py-36 flex flex-col md:flex-row gap-16 justify-between items-center  px-4 sm:px-8 md:px-24 relative">
-      <div className="flex h-full w-full flex-col md:flex-row">
+    <section className="py-24 m:py-36 flex flex-col lg:flex-row gap-16 justify-between items-center  px-4 sm:px-8 md:px-24 relative">
+      <div className="flex h-full w-full flex-col lg:flex-row lg:items-center lg:gap-12">
         {/* Content */}
         <div className="relative z-10 flex items-start flex-1 flex-col gap-5 md:gap-8">
           <div className="border border-[#183453]/50 rounded-full bg-[#EEF9FF] py-1 flex items-center gap-2 px-3 w-fit">
@@ -36,25 +38,7 @@ const Services = () => {
             Our services include:
           </p>
 
-          <div className="hidden md:flex flex-row items-start md:items-center gap-3">
-            <div className="space-y-3">
-              <ServiceItem text="Daycare" />
-              <ServiceItem text="Vet Care" />
-            </div>
-            <div className="space-y-3">
-              <ServiceItem text="Boarding" />
-              <ServiceItem text="Training" />
-            </div>
-            <div className="space-y-3">
-              <ServiceItem text="Grooming" />
-              <ServiceItem text="Grooming Education" />
-            </div>
-            <div className="space-y-3">
-              <ServiceItem text="Transportation" />
-              <ServiceItem text="Mobile Grooming" />
-            </div>
-          </div>
-          <div className="flex flex-col  w-full gap-2 md:hidden">
+          <div className="hidden lg:flex flex-wrap gap-3 max-w-[52rem]">
             <ServiceItem text="Daycare" />
             <ServiceItem text="Boarding" />
             <ServiceItem text="Grooming" />
@@ -64,7 +48,17 @@ const Services = () => {
             <ServiceItem text="Transportation" />
             <ServiceItem text="Mobile Grooming" />
           </div>
-          <div className="w-full flex md:justify-start justify-center">
+          <div className="flex flex-col  w-full gap-2 lg:hidden">
+            <ServiceItem text="Daycare" />
+            <ServiceItem text="Boarding" />
+            <ServiceItem text="Grooming" />
+            <ServiceItem text="Vet Care" />
+            <ServiceItem text="Training" />
+            <ServiceItem text="Grooming Education" />
+            <ServiceItem text="Transportation" />
+            <ServiceItem text="Mobile Grooming" />
+          </div>
+          <div className="w-full flex lg:justify-start justify-center">
             <Link href="/services" className="mt-6">
               <button className="font-medium text-lg md:text-xl border border-[#183453]/50 rounded-full py-4 px-8 md:py-5 md:px-10 bg-[#183453] text-white">
                 Our Pet Services
@@ -72,8 +66,8 @@ const Services = () => {
             </Link>
           </div>
         </div>
-        <div className="flex mt-12 md:mt-0 justify-center relative flex-1">
-          <div className="absolute hidden md:block md:top-[-50px] md:right-[-50px]">
+        <div className="flex mt-12 lg:mt-0 justify-center relative flex-1 min-w-0">
+          <div className="absolute hidden lg:block lg:top-[-50px] lg:right-[-50px]">
             <Image
               src="/blue-circles.png"
               alt="Embark Pet Services"
@@ -86,7 +80,7 @@ const Services = () => {
             height={725}
             width={725}
             alt="Embark Pet Services Background Paw"
-            className="border-2 h-[450px] w-[450px] md:w-[725px] md:h-[725px] border-[#183453] rounded-full object-cover"
+            className="border-2 aspect-square h-auto w-full max-w-[450px] lg:max-w-[560px] xl:max-w-[725px] border-[#183453] rounded-full object-cover"
           />
         </div>
       </div>
