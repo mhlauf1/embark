@@ -49,6 +49,10 @@ const Services = () => {
               <ServiceItem text="Grooming" />
               <ServiceItem text="Grooming Education" />
             </div>
+            <div className="space-y-3">
+              <ServiceItem text="Transportation" />
+              <ServiceItem text="Mobile Grooming" />
+            </div>
           </div>
           <div className="flex flex-col  w-full gap-2 md:hidden">
             <ServiceItem text="Daycare" />
@@ -57,6 +61,8 @@ const Services = () => {
             <ServiceItem text="Vet Care" />
             <ServiceItem text="Training" />
             <ServiceItem text="Grooming Education" />
+            <ServiceItem text="Transportation" />
+            <ServiceItem text="Mobile Grooming" />
           </div>
           <div className="w-full flex md:justify-start justify-center">
             <Link href="/services" className="mt-6">

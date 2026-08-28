@@ -66,6 +66,13 @@ const networkData = [
     services: ["Daycare", "Boarding", "Grooming", "Mobile Grooming"],
     link: "https://www.hafhfacility.com/",
   },
+  {
+    id: 9,
+    title: "Happy Tails Lodge",
+    location: "Great Falls, MT",
+    services: ["Daycare", "Boarding", "Grooming", "Training", "Transportation"],
+    link: "https://www.happytailslodge.com/",
+  },
 ];
 
 interface NetworkItemProps {
@@ -121,7 +128,7 @@ const MeetNetwork = () => {
           Meet our network
         </h2>
         <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
-          Six trusted local brands delivering quality pet care across the
+          Nine trusted local brands delivering quality pet care across the
           Midwest
         </p>
         <div className="grid grid-cols-1 mt-16 w-full gap-y-6">

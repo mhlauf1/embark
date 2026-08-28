@@ -100,4 +100,16 @@ export const locations: Location[] = [
     fallbackRating: 4.6,
     fallbackReviews: 154,
   },
+  {
+    id: 9,
+    title: "Happy Tails Lodge",
+    location: "Great Falls, MT",
+    tags: ["Daycare", "Boarding", "Grooming", "Training", "Transportation"],
+    mapPosition: { lat: 47.516787, lng: -111.336504 },
+    placeId: "ChIJHyxHPwQ4QlMRfh8VqpW9fN0",
+    reviewLink:
+      "https://search.google.com/local/reviews?placeid=ChIJHyxHPwQ4QlMRfh8VqpW9fN0",
+    fallbackRating: 4.6,
+    fallbackReviews: 289,
+  },
 ];
