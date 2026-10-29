@@ -73,6 +73,13 @@ const networkData = [
     services: ["Daycare", "Boarding", "Grooming", "Training", "Transportation"],
     link: "https://www.happytailslodge.com/",
   },
+  {
+    id: 10,
+    title: "Now Boarding",
+    location: "Minneapolis, MN",
+    services: ["Daycare", "Boarding", "Grooming", "Transportation"],
+    link: "https://www.nowboardingpets.com/",
+  },
 ];
 
 interface NetworkItemProps {
@@ -128,7 +135,7 @@ const MeetNetwork = () => {
           Meet our network
         </h2>
         <p className="pt-8 text-lg text-center w-auto md:w-[74ch]">
-          Nine trusted local brands delivering quality pet care across the
+          Ten trusted local brands delivering quality pet care across the
           Midwest
         </p>
         <div className="grid grid-cols-1 mt-16 w-full gap-y-6">

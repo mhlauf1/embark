@@ -112,4 +112,16 @@ export const locations: Location[] = [
     fallbackRating: 4.6,
     fallbackReviews: 289,
   },
+  {
+    id: 10,
+    title: "Now Boarding",
+    location: "Minneapolis, MN",
+    tags: ["Daycare", "Boarding", "Grooming", "Transportation"],
+    mapPosition: { lat: 44.894269, lng: -93.233246 },
+    placeId: "ChIJe3HUB8Qo9ocRs4SMM_TWmmU",
+    reviewLink:
+      "https://search.google.com/local/reviews?placeid=ChIJe3HUB8Qo9ocRs4SMM_TWmmU",
+    fallbackRating: 4.7,
+    fallbackReviews: 395,
+  },
 ];
